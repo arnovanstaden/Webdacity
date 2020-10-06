@@ -1,0 +1,17 @@
+import React from "react";
+import Layout from "../components/Layout"
+import Head from "../components/Head"
+
+
+
+const About = () => {
+    return (
+        <Layout>
+            <Head title="About | Webdacity" />
+
+            <h1>Ola</h1>
+        </Layout>
+    )
+}
+
+export default About
