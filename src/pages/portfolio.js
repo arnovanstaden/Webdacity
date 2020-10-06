@@ -6,8 +6,13 @@ import Head from "../components/Head"
 
 const Portfolio = () => {
     return (
-        <Layout>
-            <Head title="Portfolio | Webdacity" />
+        <Layout
+            pageMeta={{
+                title: "Portfolio | Webdacity",
+                description: "See our Work",
+                canonical: "/portfolio"
+            }}>
+
 
             <h1>Ola</h1>
         </Layout>

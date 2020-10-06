@@ -5,11 +5,15 @@ import Head from "../components/Head"
 
 const Contact = () => {
     return (
-        <Layout>
-            <Head title="Contact | Webdacity" />
+        <Layout
+            pageMeta={{
+                title: "Contact | Webdacity",
+                description: "Contact Us",
+                canonical: "/contact"
+            }}>
 
             <h1>Ola</h1>
-        </Layout>
+        </Layout >
     )
 }
 

@@ -6,8 +6,13 @@ import Head from "../components/Head"
 
 const Services = () => {
     return (
-        <Layout>
-            <Head title="Services | Webdacity" />
+        <Layout
+            pageMeta={{
+                title: "Services | Webdacity",
+                description: "Our Services",
+                canonical: "/services"
+            }}
+        >
             <h1>Ola</h1>
         </Layout>
     )
