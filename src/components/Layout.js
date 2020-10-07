@@ -2,16 +2,20 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "./Head";
-import "../styles/index.scss"
+import "typeface-nunito"
+import "typeface-nunito-sans"
+import "../styles/global.scss"
+import Landing from "./Landing";
 
 
-const Layout = ({ pageMeta, children }) => {
+const Layout = (props) => {
     return (
         <>
-            <Head pageMeta={pageMeta} />
+            <Head pageMeta={props.pageMeta} />
             <Header />
-            {children}
-            <Footer />
+            <Landing landingTitle={props.landingTitle} landingBig={props.landingBig} />
+            { props.children}
+            < Footer />
         </>
     )
 

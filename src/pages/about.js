@@ -1,7 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout"
-import Head from "../components/Head"
-
 
 
 const About = () => {
@@ -11,10 +9,13 @@ const About = () => {
                 title: "About | Webdacity",
                 description: "About Us",
                 canonical: "/about"
-            }}>
-
-
-            <h1>Ola</h1>
+            }} landingTitle={
+                <h1 className="landing__inner__title">
+                    We design and build amazing things <br />
+                    that help you <span>grow</span> your business.
+                  </h1>}
+            landingBig={<h1 className="landing__inner__big">Who <br /> We Are</h1>}
+        >
         </Layout>
     )
 }

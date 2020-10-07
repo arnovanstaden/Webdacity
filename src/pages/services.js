@@ -1,7 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout"
-import Head from "../components/Head"
-
 
 
 const Services = () => {
@@ -12,8 +10,14 @@ const Services = () => {
                 description: "Our Services",
                 canonical: "/services"
             }}
+            landingTitle={
+                <h1 className="landing__inner__title">
+                    We merge innovative <span>solutions</span><br />
+                    with impeccable <span>design</span>.
+                </h1>}
+            landingBig={<h1 className="landing__inner__big">What <br /> We Do</h1>}
         >
-            <h1>Ola</h1>
+
         </Layout>
     )
 }

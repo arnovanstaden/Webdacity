@@ -1,8 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout"
-import Head from "../components/Head"
-
-
 
 const Portfolio = () => {
     return (
@@ -11,10 +8,14 @@ const Portfolio = () => {
                 title: "Portfolio | Webdacity",
                 description: "See our Work",
                 canonical: "/portfolio"
-            }}>
-
-
-            <h1>Ola</h1>
+            }}
+            landingTitle={
+                <h1 className="landing__inner__title">
+                    We <span>design</span> branding identities <br />
+                    and <span>develop</span> fast &amp; beautiful websites.
+                  </h1>}
+            landingBig={<h1 className="landing__inner__big">Featured <br /> Projects</h1>}
+        >
         </Layout>
     )
 }
