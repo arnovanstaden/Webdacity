@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import "../styles/header.scss"
-import NavbarLogo from "../assets/images/logos/webdacity/navbar.svg";
+import NavbarLogo from "../assets/images/logos/webdacity/logo-full.svg";
 
 
 const Header = () => {
