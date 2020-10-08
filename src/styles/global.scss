@@ -24,6 +24,11 @@ body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -51,5 +56,33 @@ body {
 
     &-thumb:hover {
         background: $white;
+    }
+}
+
+
+// Button
+
+.button {
+    background-color: transparent;
+    border: 2px solid $blue;
+    border-radius: 0.5rem;
+
+    a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $headingfont;
+        font-size: 0.8rem;
+    }
+
+    &:hover {
+        background-color: $blue;
+        transition: 0.3s ease-out;
+
+        a {
+            font-weight: 600;
+        }
     }
 }
