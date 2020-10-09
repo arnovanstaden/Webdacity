@@ -1,4 +1,4 @@
-@import "./global.scss";
+@import "../global.scss";
 
 footer {
     background-color: $black;
@@ -87,8 +87,9 @@ footer {
             padding: 0.25rem;
         }
 
-        img {
-            width: 1rem;
+        i {
+            color: $blue;
+            font-size: 0.9rem;
         }
     }
 

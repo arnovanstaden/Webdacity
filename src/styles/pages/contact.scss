@@ -1,0 +1,54 @@
+@import "../global.scss";
+
+.contact {
+    display: flex;
+
+    p {
+        color: white;
+        font-family: $headingfont;
+    }
+
+    &__form {
+        width: 60%;
+        background-color: $grey;
+
+    }
+
+    &__details {
+        width: 40%;
+        padding: 2rem 1rem 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+
+        >div {
+            padding-bottom: 1rem;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-size: 0.9rem;
+                margin: 0.2rem 0;
+                color: $lightgrey;
+                text-decoration: none;
+            }
+        }
+
+        &__social {
+
+            a {
+                margin-right: 0.5rem;
+
+                i {
+                    color: $blue;
+                    font-size: 0.9rem;
+                }
+            }
+
+
+        }
+
+    }
+}

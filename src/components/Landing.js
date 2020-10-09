@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/landing.scss";
+import "../styles/components/landing.scss";
 import { Link } from "gatsby"
 
 const Landing = (props) => {
@@ -8,11 +8,12 @@ const Landing = (props) => {
         console.log(props)
         if (props.content) {
             return (
-                <button className="button">
+                <button className="button landing__button">
                     <Link to={props.content.to}>{props.content.text}</Link>
                 </button>
             )
         }
+        return null
     }
 
     return (

@@ -1,4 +1,4 @@
-@import "./global.scss";
+@import "../global.scss";
 
 .landing {
     height: 100vh;
@@ -29,12 +29,13 @@
         }
 
         &__big {
-            color: $black;
+            z-index: 0;
+            color: rgba(15, 16, 17, 0.8);
             line-height: 1;
             width: 100%;
             margin: 0;
-            font-weight: 800;
-            font-size: 8rem;
+            font-weight: 900;
+            font-size: 9rem;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -44,10 +45,9 @@
             -ms-transform: translate(-50%, -50%);
             -o-transform: translate(-50%, -50%);
         }
-
     }
 
-    .button {
+    &__button {
         z-index: 5;
     }
 }

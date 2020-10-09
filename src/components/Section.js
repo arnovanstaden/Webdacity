@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/section.scss";
+import "../styles/components/section.scss";
 import classNames from "classnames";
 import GreySkew from "../assets/images/sections/grey.svg";
 import BlackSkew from "../assets/images/sections/black.svg";

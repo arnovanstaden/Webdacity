@@ -1,12 +1,9 @@
 import React from "react"
 import { Link } from "gatsby";
-import "../styles/footer.scss";
+import "../styles/components/footer.scss";
 
 // Images
 import FooterLogo from "../assets/images/logos/webdacity/logo-full.svg";
-import InstagramLogo from "../assets/images/icons/instagram-blue.png"
-import FacebookLogo from "../assets/images/icons/facebook-blue.png"
-import LinkedInLogo from "../assets/images/icons/linkedin-blue.png"
 
 const Footer = () => {
     return (
@@ -37,14 +34,14 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer__social">
-                    <a href="https://www.instagram.com/?hl=en">
-                        <img src={InstagramLogo} alt="" target="blank" />
-                    </a>
-                    <a href="https://www.facebook.com/Webdacity">
-                        <img src={FacebookLogo} alt="" target="blank" />
+                    <a href="https://www.instagram.com/?hl=en" target="blank">
+                        <i className="icon-instagram"></i>
                     </a>
                     <a href="https://www.linkedin.com/company/webdacity" target="blank">
-                        <img src={LinkedInLogo} alt="" />
+                        <i className="icon-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/Webdacity" target="blank">
+                        <i className="icon-facebook"></i>
                     </a>
                 </div>
             </div>
