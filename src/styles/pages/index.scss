@@ -1,0 +1,52 @@
+@import "../global.scss";
+
+
+.home {
+
+
+    &__section-clients {
+
+        &__grid {
+            display: flex;
+        }
+    }   
+
+    // 
+    &__section-services {
+
+        &__grid {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0;
+
+            .content-block {
+                width: 47.5%;
+
+                .button {
+                    margin-top: 1.5rem;
+                    float: right;
+
+                    a {
+                        text-transform: none;
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+    &__section-feedback {
+        // &__grid {
+        //     display: flex;
+        // }
+        
+    }
+
+    &__section-ready {
+        text-align: center;
+    }
+}
+
+

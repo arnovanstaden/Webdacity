@@ -1,7 +1,10 @@
 import React from "react";
+
+// Components
 import Layout from "../components/Layout";
+
+// Styles, Fonts, Images
 import "../styles/pages/contact.scss";
-import "../assets/fonts/social/css/social.css"
 
 const Contact = () => {
     return (
@@ -24,17 +27,29 @@ const Contact = () => {
 
                     <h1><span>Hello</span>.</h1>
                     <p>Have an idea? Tell us about it.</p>
-                    <form action="">
-
+                    <form data-netlify="true">
+                        <div className="contact__form__group">
+                            <input type="text" name="Name" placeholder="Your Name" />
+                            <label htmlFor="Name">Your Name</label>
+                        </div>
+                        <div className="contact__form__group">
+                            <input type="email" name="Email" placeholder="Your Email" />
+                            <label htmlFor="Email">Your Email</label>
+                        </div>
+                        <div className="contact__form__group">
+                            <textarea name="Message" placeholder="Your Message"></textarea>
+                            <label htmlFor="Message">Your Message</label>
+                        </div>
+                        <button type="submit">Send</button>
                     </form>
                 </div>
                 <div className="contact__details">
                     <div className="contact__details__info">
                         <p>Contact Information</p>
-                        <a href="mailto:hello@webdacity.co.za">hello@webdacity.co.za</a>
+                        <a href="mailto:hello@webdacity.dev">hello@webdacity.dev</a>
                         <a href="tel:+27797405874">+27 79 740 5874</a>
                         <a href="https://goo.gl/maps/fAWWq2N12tAA3YmX9">Cape Town, South Africa</a>
-                        <a>Mon - Fri: 8.30 - 17.30</a>
+                        <p>Mon - Fri: 8.30 - 17.30</p>
                     </div>
                     <div className="contact__details__social">
                         <p>Stay up to date with the latest news &amp; projects...</p>

@@ -1,0 +1,34 @@
+@import "../global.scss";
+
+.services {
+    
+
+    .view-work {
+        text-align: center;
+        padding-top: 2rem;
+
+        h4 {
+            font-weight: 600;
+            color: $blue;
+            font-size: 1.2rem;
+        }
+
+    }
+
+
+
+    &__section-design {
+
+        &__grid {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0;
+
+            .content-block {
+                width: 47.5%;
+            }
+
+
+        }
+    }
+}

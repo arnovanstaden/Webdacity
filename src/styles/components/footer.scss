@@ -90,6 +90,11 @@ footer {
         i {
             color: $blue;
             font-size: 0.9rem;
+            transition: 0.3s ease-out;
+        }
+
+        i:hover {
+            color: $white;
         }
     }
 

@@ -28,7 +28,7 @@ const Footer = () => {
                 <div className="footer__contact">
                     <p>Got an awesome project in mind? <Link to="/contact">Let's talk!</Link> </p>
                     <div className="footer__contact__details">
-                        <a href="mailto:hello@webdacity.co.za">hello@webdacity.co.za</a>
+                        <a href="mailto:hello@webdacity.dev">hello@webdacity.dev</a>
                         <span>|</span>
                         <a href="tel:0797405874">079 740 5874</a>
                     </div>
@@ -42,6 +42,15 @@ const Footer = () => {
                     </a>
                     <a href="https://www.facebook.com/Webdacity" target="blank">
                         <i className="icon-facebook"></i>
+                    </a>
+                    <a href="https://dribbble.com/Webdacity" target="blank">
+                        <i className="icon-dribble"></i>
+                    </a>
+                    <a href="https://www.behance.net/Webdacity" target="blank">
+                        <i className="icon-behance"></i>
+                    </a>
+                    <a href="https://github.com/Webdacity" target="blank">
+                        <i className="icon-github"></i>
                     </a>
                 </div>
             </div>

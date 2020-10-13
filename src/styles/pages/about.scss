@@ -1,0 +1,133 @@
+@import "../global.scss";
+
+
+.about {
+
+    &__section-story {
+
+        &__grid {
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .text--left {
+                width: 30%;
+
+                h1 {
+                    color: $blue;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin: 0;
+                }
+
+                h5 {
+                    color: white;
+                    font-size: 1rem;
+                    font-family: $headingfont;
+                    margin: 0.5rem 0 1.5rem 0;
+                    font-weight: 400;
+                }
+
+            }
+
+            .text--right {
+                width: 60%;
+
+                p {
+                    font-size: 0.9rem;
+                    line-height: 1.25;
+
+                    span {
+                        padding: 0.5rem 0;
+                        display: block;
+                    }
+                }
+            }
+
+        }
+       
+    }
+
+    &__section-values {
+
+    }
+
+    &__section-stats {
+
+        &__grid {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+
+            .stat {
+                text-align: center;
+
+                h1 {
+                    color: $blue;
+                    font-family: $mainfont;
+                    font-size: 2.5rem;
+                    margin: 0;
+                    margin-bottom: 0.5rem;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                }
+
+                p {
+                    color: $white;
+                    font-family: $headingfont;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &__section-founder {
+        
+        &__grid {
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .grid__image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+            }
+
+            .grid__text {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // padding-left: 2rem;
+
+                h1 {
+                    color: $blue;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    margin: 0;
+                }
+
+                h5 {
+                    color: white;
+                    font-size: 1.2rem;
+                    font-family: $headingfont;
+                    margin: 0.5rem 0 1.5rem 0;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+    }
+}

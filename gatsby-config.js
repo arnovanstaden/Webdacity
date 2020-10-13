@@ -2,6 +2,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -17,6 +18,16 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `feedback`,
+        path: `${__dirname}/src/data/`,
+        plugins: [
+          `gatsby-transformer-json`
+        ]
+      }
+    }
   ],
   siteMetadata: {
     title: "Webdacity Studio",

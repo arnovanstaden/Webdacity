@@ -18,21 +18,32 @@ const Section = (props) => {
         )
     }
 
+    const SectionHeading = (props) => {
+        if (props.headingBig) {
+            return (
+                <div className="section__heading">
+                    <h1>{props.headingBig}</h1>
+                    <h5>{props.headingSmall}</h5>
+                </div>
+            )
+        }
+        return null
+    }
+
     var sectionClass = classNames({
         "section": true,
-        'light': props.light,
-    });
+        'section--light': props.light,
+    }, props.classNameProp);
 
     return (
         <section className={sectionClass}>
             <div className="section__skew">
                 <SectionSkew light={props.light} />
             </div>
-            <div className="section__heading">
-                <h1>{props.headingBig}</h1>
-                <h5>{props.headingSmall}</h5>
+            <div className="container">
+                <SectionHeading headingBig={props.headingBig} headingSmall={props.headingSmall} />
+                {props.children}
             </div>
-            {props.children}
         </section>
     )
 }

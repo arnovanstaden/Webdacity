@@ -1,0 +1,48 @@
+@import "../global.scss";
+
+.feedback-block {
+    display: flex;
+    flex-direction: column;
+    background-color: $black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 0 1rem;
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        font-family: $headingfont;
+
+        h3 {
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.25px;
+            color: white;
+            margin: 0;
+        }
+
+        h5 {
+            color: $blue;
+            font-weight: 600;
+            margin: 0.25rem 0 0 0;
+            font-size: 0.9rem;
+        }
+
+        &__image {
+            background-color: $white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            margin-right: 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}

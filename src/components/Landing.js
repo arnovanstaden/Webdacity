@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 const Landing = (props) => {
 
     const LandingButton = (props) => {
-        console.log(props)
         if (props.content) {
             return (
                 <button className="button landing__button">

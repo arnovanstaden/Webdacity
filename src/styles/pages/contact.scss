@@ -11,6 +11,94 @@
     &__form {
         width: 60%;
         background-color: $grey;
+        padding: 4rem 2rem 4rem 2rem;
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: white;
+
+            span {
+                color: $blue;
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: 2px solid $blue;
+            border-radius: 0.5rem;
+            display: block;
+            padding: 0.5rem 2rem;
+            color: $white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $headingfont;
+            font-size: 0.8rem;
+            float: right;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            font-weight: 500;
+
+            &:hover {
+                background-color: $blue;
+                font-weight: 600;
+            }
+            }
+
+           
+
+        &__group {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 1rem;
+
+            label {
+                opacity: 0;
+                transition: 0.3s ease-out;
+                color: $white;
+            }
+
+            textarea {
+                height: 7rem;
+                font-family: $mainfont;
+            }
+
+            input, textarea {
+                background-color: transparent;
+                padding: 1rem 0;
+                border: none;
+                outline: none;
+                color: white;
+                transition: 0.3s ease-out;
+                border-bottom: 2px solid $lightgrey;
+                resize: none;
+
+                &::placeholder {
+                    font-size: 1rem;
+                }
+
+                &:focus {
+                    font-size: 1.2rem;
+                    color: $blue;
+                    border-color: $white;
+                    padding: 1rem 0;
+
+                    &::placeholder {
+                        color: transparent;
+                    }
+
+                    & + label {
+                        opacity: 1;
+                        padding-top: 1rem;
+                    }
+
+                   
+                }
+
+
+            }
+
+        }
 
     }
 
@@ -28,11 +116,15 @@
             display: flex;
             flex-direction: column;
 
-            a {
+            a, p:last-child {
                 font-size: 0.9rem;
                 margin: 0.2rem 0;
                 color: $lightgrey;
                 text-decoration: none;
+            }
+
+            p {
+                font-size: 1rem;
             }
         }
 
@@ -44,6 +136,11 @@
                 i {
                     color: $blue;
                     font-size: 0.9rem;
+                    transition: 0.3s ease-out;
+                }
+
+                i:hover {
+                    color: $white;
                 }
             }
 
