@@ -13,9 +13,6 @@ import FeedbackSlick from "../components/FeedbackSlick"
 // Styles, Fonts, Images
 import "../styles/pages/index.scss";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 const Home = () => {
   return (
     <Layout
