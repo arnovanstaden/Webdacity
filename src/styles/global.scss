@@ -5,14 +5,8 @@ $black: #151618;
 $grey: #1b1d1f;
 $lightgrey: #99a1a6;
 $white: #ffffff;
-$headingfont: Nunito,
-Tahoma,
-Geneva,
-sans-serif;
-$mainfont: "Nunito Sans",
-Tahoma,
-Geneva,
-sans-serif;
+$headingfont: Nunito, Tahoma, Geneva, sans-serif;
+$mainfont: "Nunito Sans", Tahoma, Geneva, sans-serif;
 
 html,
 body {
@@ -25,6 +19,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     color: $lightgrey;
+    transition: 0.3s ease-out;
 }
 
 body {
@@ -59,7 +54,6 @@ body {
     }
 }
 
-
 // Button
 
 .button {
@@ -67,6 +61,11 @@ body {
     border: 2px solid $blue;
     border-radius: 0.5rem;
     padding: 0;
+
+    &--centered {
+        display: block;
+        margin: auto;
+    }
 
     a {
         display: block;
@@ -79,10 +78,10 @@ body {
 
     &:hover {
         background-color: $blue;
-        transition: 0.3s ease-out;
+        transition: 0.3s ease;
 
         a {
-            font-weight: 600;
+            // font-weight: 600;
         }
     }
 
@@ -91,8 +90,7 @@ body {
     }
 }
 
-
-// Container 
+// Container
 
 .container {
     width: 100%;
@@ -111,8 +109,8 @@ body {
 
 @media (min-width: 768px) {
     .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
         max-width: 720px;
     }
 }
@@ -135,22 +133,21 @@ body {
     }
 }
 
-
 // Pace
 .pace {
     -webkit-pointer-events: none;
     pointer-events: none;
-  
+
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
-  
-  .pace-inactive {
+}
+
+.pace-inactive {
     display: none;
-  }
-  
-  .pace .pace-progress {
+}
+
+.pace .pace-progress {
     background: $blue;
     position: fixed;
     z-index: 2000;
@@ -158,5 +155,4 @@ body {
     right: 100%;
     width: 100%;
     height: 2px;
-  }
-  
+}

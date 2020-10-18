@@ -1,17 +1,22 @@
 import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
+import { v4 as uuidv4 } from 'uuid';
 
 // Components
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import ContentBlock from "../components/ContentBlock";
+import ServiceTicker from "../components/ServiceTicker";
 
+// Data
+import ValuesData from "../assets/data/values.json"
 
 // Styles, Fonts, Images
 import "../styles/pages/about.scss";
-import ArnoImage from "../assets/images/other/arno.jpg";
 
 
-const About = () => {
+const About = ({ data }) => {
     return (
         <Layout
             pageMeta={{
@@ -59,8 +64,7 @@ const About = () => {
                 light="true"
                 classNameProp="about__section-services"
             >
-                <div className="about__section-services__grid">
-                </div>
+                <ServiceTicker />
 
             </Section>
 
@@ -70,7 +74,14 @@ const About = () => {
                 classNameProp="about__section-values"
             >
                 <div className="about__section-values__grid">
-
+                    {ValuesData.map(value => (
+                        <ContentBlock
+                            heading={value.name}
+                            key={uuidv4()}
+                        >
+                            <p>{value.description}</p>
+                        </ContentBlock>
+                    ))}
                 </div>
 
             </Section>
@@ -101,7 +112,7 @@ const About = () => {
             >
                 <div className="about__section-founder__grid">
                     <div className="grid__image">
-                        <img src={ArnoImage} alt="Arno Van Staden Webdacity's Founder" />
+                        <Img fluid={data.file.childImageSharp.fluid} style={{ width: "100%" }} />
                     </div>
                     <div className="grid__text">
                         <h1>Company Founder</h1>
@@ -120,4 +131,17 @@ const About = () => {
     )
 }
 
-export default About
+export default About;
+
+export const data = graphql`
+query {
+  file(relativePath: { eq: "other/arno.jpg" }) {
+    childImageSharp {
+        fluid(maxWidth: 600, quality: 80) {
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
+          }
+    }
+  }
+}
+`

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import Img from "gatsby-image";
+import { v4 as uuidv4 } from 'uuid';
 
 // Components
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import ContentBlock from "../components/ContentBlock";
-import DevelopmentSection from "../components/DevelopmentSection";
 
 // Vendors
 import FeedbackSlick from "../components/FeedbackSlick"
@@ -13,7 +14,8 @@ import FeedbackSlick from "../components/FeedbackSlick"
 // Styles, Fonts, Images
 import "../styles/pages/index.scss";
 
-const Home = () => {
+
+const Home = ({ data }) => {
   return (
     <Layout
       pageMeta={{
@@ -47,7 +49,14 @@ const Home = () => {
         headingSmall="We’re trusted by brands of all sizes. You’ll be in good company."
         classNameProp="home__section-clients"
       >
-        <div className="home__section-clients__grid"></div>
+        <div className="home__section-clients__grid">
+          {data.allFile.edges.map((image) =>
+            (
+              <div className="client__logo" key={uuidv4()}>
+                <Img fluid={image.node.childImageSharp.fluid} />
+              </div>
+            ))}
+        </div>
 
       </Section>
 
@@ -83,8 +92,13 @@ const Home = () => {
                 </Link>
             </button>
           </ContentBlock>
-
         </div>
+
+        <button className="button button--centered">
+          <Link to="/services">
+            View All Services
+                </Link>
+        </button>
       </Section>
 
       <Section
@@ -105,9 +119,10 @@ const Home = () => {
         headingBig="Ready?"
         headingSmall={"We collaborate with ambitious brands & people. Let's build something great together."}
         classNameProp="home__section-ready"
+        sectionSimple={true}
       >
         <div className="container">
-          <button className="button">
+          <button className="button button--centered">
             <Link to="/contact">Get in Touch</Link>
           </button>
         </div>
@@ -116,4 +131,26 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
+
+
+export const query = graphql`
+query ClientLogoImagesQuery {
+  allFile(filter: {ext: {regex: "/(png)/"}, relativeDirectory: {eq: "logos/clients/logos"}}) {
+    edges {
+      node {
+        base
+        childImageSharp {
+          fluid {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+          }
+        }
+      }
+    }
+  }
+}
+`

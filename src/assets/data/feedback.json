@@ -1,29 +1,31 @@
 [{
     "client": "Varkhart",
+    "name": "Varkhart",
     "service": "Graphic Design | Web Design & Development | Web Application Development",
     "testimonial": "Truly the best website design and development company.. Very affordable and word class service. Thanks Arno, for looking so well after my businesses. You are a key player in their success."
 }, {
     "client": "SmartFunder",
+    "name": "SmartFunder",
     "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque!Ad incidunt veniam libero doloremque magnam deserunt cumque commodi quis,    modi maxime tenetur totam laudantium recusandae ? Vitae,    inventore.    "
 }, {
     "client": "Oosthuizens Attorneys",
+    "name": "Oosthuizens",
     "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque!Ad incidunt veniam libero doloremque magnam deserunt cumque commodi quis,    modi maxime tenetur totam laudantium recusandae ? Vitae,    inventore.    "
 }, {
     "client": "PR Engineering",
+    "name": "PR-Engineering",
     "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque!Ad incidunt veniam libero doloremque magnam deserunt cumque commodi quis,    modi maxime tenetur totam laudantium recusandae ? Vitae,    inventore.    "
 }, {
     "client": "Craft Consulting",
-    "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
-    "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque!Ad incidunt veniam libero doloremque magnam deserunt cumque commodi quis,    modi maxime tenetur totam laudantium recusandae ? Vitae,    inventore.    "
-}, {
-    "client": "Hundredfold",
+    "name": "Craft-Consulting",
     "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque!Ad incidunt veniam libero doloremque magnam deserunt cumque commodi quis,    modi maxime tenetur totam laudantium recusandae ? Vitae,    inventore.    "
 }, {
     "client": "GEMMA Institute",
+    "name": "Gemma",
     "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque!Ad incidunt veniam libero doloremque magnam deserunt cumque commodi quis,    modi maxime tenetur totam laudantium recusandae ? Vitae,    inventore.    "
 }]

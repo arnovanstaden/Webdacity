@@ -3,6 +3,8 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-transition-link`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -19,11 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `feedback`,
-        path: `${__dirname}/src/data/`,
-        plugins: [
-          `gatsby-transformer-json`
-        ]
+        name: `images`,
+        path: `${__dirname}/src/assets/images/`
       }
     }
   ],

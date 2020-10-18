@@ -1,7 +1,19 @@
 @import "../global.scss";
 
 .services {
-    
+    &__section-development {
+        &__grid {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 2rem;
+            justify-content: space-between;
+            box-sizing: border-box;
+
+            .content-block {
+                width: 47.5%;
+            }
+        }
+    }
 
     .view-work {
         text-align: center;
@@ -12,13 +24,9 @@
             color: $blue;
             font-size: 1.2rem;
         }
-
     }
 
-
-
     &__section-design {
-
         &__grid {
             display: flex;
             justify-content: space-between;
@@ -27,8 +35,6 @@
             .content-block {
                 width: 47.5%;
             }
-
-
         }
     }
 }

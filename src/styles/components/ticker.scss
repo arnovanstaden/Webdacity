@@ -1,0 +1,31 @@
+@import "../global.scss";
+
+.service__ticker {
+    padding: 2rem 0;
+
+    &__inner {
+        font-family: $headingfont;
+        display: flex;
+        margin: 2rem 0;
+
+        div {
+            padding: 0 5rem;
+        }
+
+        h1 {
+            font-weight: 500;
+            display: block;
+            font-size: 1.7rem;
+            white-space: nowrap;
+
+            &.text--white {
+                color: $white;
+            }
+
+            &.text--blue {
+                color: $blue;
+                font-weight: 600;
+            }
+        }
+    }
+}

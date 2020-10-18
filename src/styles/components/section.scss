@@ -11,10 +11,6 @@
         position: relative;
     }
 
-    img {
-        width: 100%;
-    }
-
     &--light {
         background-color: $grey;
 
@@ -25,7 +21,7 @@
 
     &__heading {
         text-align: center;
-        padding-top: 4rem;
+        padding: 4rem 0 3rem 0;
         text-align: center;
 
         h1 {
@@ -44,9 +40,11 @@
             font-size: 1.1rem;
             padding: 0 10%;
         }
-
     }
 
-
-
+    &.section--simple {
+        .section__heading {
+            padding-bottom: 0;
+        }
+    }
 }

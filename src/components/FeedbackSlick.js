@@ -4,9 +4,11 @@ import { useStaticQuery, graphql } from "gatsby"
 // Components
 import FeedbackBlock from "../components/FeedbackBlock";
 
+// Data
+import feedbackData from "../assets/data/feedback.json"
+
 // Vendors
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -20,44 +22,29 @@ class Slick extends Component {
             slidesToShow: 2,
             slidesToScroll: 1,
             draggable: true,
-            autoplay: true,
-            speed: 1000,
-            autoplaySpeed: 5000,
+            // autoplay: true,
+            // autoplaySpeed: 5000,
             cssEase: "linear",
             pauseOnHover: true,
-            swipeToSlide: true
+            swipeToSlide: true,
+            speed: 1000,
         };
         return (
             <Slider {...settings}>
-                <FeedbackBlock />
-                <FeedbackBlock />
-                <FeedbackBlock />
-                <FeedbackBlock />
+                {feedbackData.map((feedback, index) => {
+                    return <FeedbackBlock key={index}
+                        feedback={feedback}
+                    />
+                })}
             </Slider>
         );
     }
 }
 
 const FeedbackSlick = () => {
-    let { feedback } = useStaticQuery(graphql`
-        {feedback: allFeedbackJson {
-            edges {
-              node {
-                client
-                service
-                testimonial
-              }
-            }
-          }
-        }
-        `)
-
-    console.log(feedback)
-
     return (
         <Slick />
     )
-
 }
 
 export default FeedbackSlick;

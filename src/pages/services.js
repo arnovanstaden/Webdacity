@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
+import { v4 as uuidv4 } from 'uuid';
 
 // Components
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import ContentBlock from "../components/ContentBlock";
+
+// Data
+import ServicesData from "../assets/data/development.json"
 
 // Styles, Fonts, Images
 import "../styles/pages/services.scss";
@@ -33,7 +37,14 @@ const Services = () => {
                 classNameProp="services__section-development"
             >
                 <div className="services__section-development__grid">
-
+                    {ServicesData.map(value => (
+                        <ContentBlock
+                            heading={value.name}
+                            key={uuidv4()}
+                        >
+                            <p>{value.description}</p>
+                        </ContentBlock>
+                    ))}
                 </div>
 
                 <div className="view-work">

@@ -1,23 +1,35 @@
 @import "../global.scss";
 
-
 .home {
-
-
     &__section-clients {
-
         &__grid {
             display: flex;
+            padding: 0 10%;
+            gap: 1rem;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .client__logo {
+                box-sizing: border-box;
+                padding: 0.5rem;
+                width: 20%;
+                opacity: 0.6;
+                transition: 0.3s ease-out;
+
+                &:hover {
+                    transform: scale(1.025);
+                    opacity: 1;
+                }
+            }
         }
-    }   
+    }
 
-    // 
+    //
     &__section-services {
-
         &__grid {
             display: flex;
             justify-content: space-between;
-            padding: 2rem 0;
+            padding-bottom: 2rem;
 
             .content-block {
                 width: 47.5%;
@@ -29,24 +41,12 @@
                     a {
                         text-transform: none;
                     }
-
                 }
             }
-
-
         }
-    }
-
-    &__section-feedback {
-        // &__grid {
-        //     display: flex;
-        // }
-        
     }
 
     &__section-ready {
         text-align: center;
     }
 }
-
-

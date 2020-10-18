@@ -33,6 +33,7 @@ const Section = (props) => {
     var sectionClass = classNames({
         "section": true,
         'section--light': props.light,
+        'section--simple': props.sectionSimple
     }, props.classNameProp);
 
     return (
