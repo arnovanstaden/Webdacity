@@ -20,6 +20,22 @@
                     transform: scale(1.025);
                     opacity: 1;
                 }
+
+                @media (max-width: 768px) {
+                    width: 30%;
+                }
+
+                @media (max-width: 576px) {
+                    width: 45%;
+                }
+            }
+
+            @media (max-width: 991px) {
+                padding: 0;
+            }
+
+            @media (max-width: 576px) {
+                justify-content: space-between;
             }
         }
     }
@@ -29,6 +45,7 @@
         &__grid {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             padding-bottom: 2rem;
 
             .content-block {
@@ -42,6 +59,14 @@
                         text-transform: none;
                     }
                 }
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+
+            @media (max-width: 768px) {
+                row-gap: 2rem;
             }
         }
     }

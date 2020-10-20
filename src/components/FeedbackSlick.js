@@ -22,15 +22,24 @@ class Slick extends Component {
             slidesToShow: 2,
             slidesToScroll: 1,
             draggable: true,
-            // autoplay: true,
-            // autoplaySpeed: 5000,
+            autoplay: true,
+            autoplaySpeed: 5000,
             cssEase: "linear",
             pauseOnHover: true,
             swipeToSlide: true,
             speed: 1000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        infinite: true,
+                    }
+                }
+            ]
         };
         return (
-            <Slider {...settings}>
+            <Slider {...settings} className="feedback-slider">
                 {feedbackData.map((feedback, index) => {
                     return <FeedbackBlock key={index}
                         feedback={feedback}
