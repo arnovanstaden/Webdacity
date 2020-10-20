@@ -43,9 +43,7 @@
                 background-color: $blue;
                 font-weight: 600;
             }
-            }
-
-           
+        }
 
         &__group {
             display: flex;
@@ -63,7 +61,8 @@
                 font-family: $mainfont;
             }
 
-            input, textarea {
+            input,
+            textarea {
                 background-color: transparent;
                 padding: 1rem 0;
                 border: none;
@@ -91,15 +90,9 @@
                         opacity: 1;
                         padding-top: 1rem;
                     }
-
-                   
                 }
-
-
             }
-
         }
-
     }
 
     &__details {
@@ -108,7 +101,7 @@
         display: flex;
         flex-direction: column;
 
-        >div {
+        > div {
             padding-bottom: 1rem;
         }
 
@@ -116,7 +109,8 @@
             display: flex;
             flex-direction: column;
 
-            a, p:last-child {
+            a,
+            p:last-child {
                 font-size: 0.9rem;
                 margin: 0.2rem 0;
                 color: $lightgrey;
@@ -129,23 +123,21 @@
         }
 
         &__social {
-
             a {
-                margin-right: 0.5rem;
+                margin-right: 0.6rem;
+                text-decoration: none;
 
                 i {
                     color: $blue;
-                    font-size: 0.9rem;
                     transition: 0.3s ease-out;
                 }
 
-                i:hover {
-                    color: $white;
+                &:hover {
+                    i {
+                        color: $white;
+                    }
                 }
             }
-
-
         }
-
     }
 }

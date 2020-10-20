@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?mnqi71');
+  src:  url('fonts/icomoon.eot?mnqi71#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mnqi71') format('truetype'),
+    url('fonts/icomoon.woff?mnqi71') format('woff'),
+    url('fonts/icomoon.svg?mnqi71#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e90e";
+}
+.icon-github:before {
+  content: "\e90f";
+}
+.icon-behance:before {
+  content: "\e910";
+}
+.icon-dribbble:before {
+  content: "\e911";
+}
+.icon-instagram:before {
+  content: "\e912";
+}
+.icon-facebook:before {
+  content: "\e913";
+}
+.icon-adobephotoshop:before {
+  content: "\e901";
+}
+.icon-adobeaftereffects:before {
+  content: "\e902";
+}
+.icon-adobeillustrator:before {
+  content: "\e903";
+}
+.icon-gatsby:before {
+  content: "\e904";
+}
+.icon-sass:before {
+  content: "\e905";
+}
+.icon-javascript:before {
+  content: "\e906";
+}
+.icon-mongodb:before {
+  content: "\e907";
+}
+.icon-bootstrap:before {
+  content: "\e908";
+}
+.icon-jquery:before {
+  content: "\e909";
+}
+.icon-html5:before {
+  content: "\e90a";
+}
+.icon-css3:before {
+  content: "\e90b";
+}
+.icon-netlify:before {
+  content: "\e90c";
+}
+.icon-node-dot-js:before {
+  content: "\e90d";
+}
+.icon-react:before {
+  content: "\e900";
+}
+.icon-git:before {
+  content: "\eae7";
+}

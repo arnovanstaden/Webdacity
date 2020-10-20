@@ -66,7 +66,7 @@ const Contact = () => {
                     <div className="contact__details__social">
                         <p>For the design enthusiasts, get inspired here...</p>
                         <a href="https://dribbble.com/Webdacity" target="blank">
-                            <i className="icon-dribble"></i>
+                            <i className="icon-dribbble"></i>
                         </a>
                         <a href="https://www.behance.net/Webdacity" target="blank">
                             <i className="icon-behance"></i>

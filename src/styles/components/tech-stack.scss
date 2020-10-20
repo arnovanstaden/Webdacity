@@ -1,0 +1,22 @@
+@import "../global.scss";
+
+.tech-stack {
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        i {
+            padding: 0.25rem;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            color: $white;
+            opacity: 0.7;
+            transition: 0.3s ease-out;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

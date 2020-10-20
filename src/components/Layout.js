@@ -13,8 +13,9 @@ import Landing from "./Landing";
 import "typeface-nunito";
 import "typeface-nunito-sans";
 import "../styles/global.scss";
-import "../assets/fonts/social/css/social.css";
+import "../styles/fonts/icons/icons.css";
 
+// Icons
 
 const Layout = (props) => {
     return (

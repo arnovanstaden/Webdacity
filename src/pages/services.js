@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import ContentBlock from "../components/ContentBlock";
+import TechStack from "../components/TechStack"
 
 // Data
 import ServicesData from "../assets/data/development.json"
@@ -65,7 +66,7 @@ const Services = () => {
                 classNameProp="services__section-stack"
             >
                 <div className="services__section-stack__grid">
-
+                    <TechStack />
                 </div>
 
             </Section>

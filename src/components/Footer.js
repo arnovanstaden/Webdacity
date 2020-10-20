@@ -44,7 +44,7 @@ const Footer = () => {
                         <i className="icon-facebook"></i>
                     </a>
                     <a href="https://dribbble.com/Webdacity" target="blank">
-                        <i className="icon-dribble"></i>
+                        <i className="icon-dribbble"></i>
                     </a>
                     <a href="https://www.behance.net/Webdacity" target="blank">
                         <i className="icon-behance"></i>
