@@ -41,6 +41,16 @@
                     }
                 }
             }
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+
+                .text--left,
+                .text--right {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
         }
     }
 
@@ -140,6 +150,28 @@
                 p {
                     font-size: 0.9rem;
                     line-height: 1.5;
+                }
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                align-items: center;
+
+                .grid__image {
+                    width: 75%;
+                    margin-top: 2rem;
+                }
+
+                .grid__text {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .grid__image {
+                    width: 100%;
+                    margin-top: 2rem;
                 }
             }
         }

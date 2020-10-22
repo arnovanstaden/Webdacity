@@ -11,6 +11,10 @@
 
             .content-block {
                 width: 47.5%;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
             }
         }
     }
@@ -31,9 +35,15 @@
             display: flex;
             justify-content: space-between;
             padding: 2rem 0;
+            flex-wrap: wrap;
+            row-gap: 2rem;
 
             .content-block {
                 width: 47.5%;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
             }
         }
     }

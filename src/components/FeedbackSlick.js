@@ -28,12 +28,22 @@ class Slick extends Component {
             pauseOnHover: true,
             swipeToSlide: true,
             speed: 1000,
+            lazyLoad: true,
+            centerPadding: "100px",
             responsive: [
                 {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                         infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        infinite: true,
+                        arrows: false
                     }
                 }
             ]

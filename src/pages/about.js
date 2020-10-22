@@ -137,7 +137,7 @@ export const data = graphql`
 query {
   file(relativePath: { eq: "other/arno.jpg" }) {
     childImageSharp {
-        fluid(maxWidth: 600, quality: 80) {
+        fluid(maxWidth: 600, quality: 90) {
             ...GatsbyImageSharpFluid
             ...GatsbyImageSharpFluid_withWebp
           }

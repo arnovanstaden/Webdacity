@@ -1,7 +1,7 @@
 [{
     "client": "Varkhart",
     "name": "Varkhart",
-    "service": "Graphic Design | Web Design & Development | Web Application Development",
+    "service": "Branding | Graphic Design | Web Design & Development | Web Application Development",
     "testimonial": "Truly the best website design and development company.. Very affordable and word class service. Thanks Arno, for looking so well after my businesses. You are a key player in their success."
 }, {
     "client": "SmartFunder",
@@ -11,21 +11,36 @@
 }, {
     "client": "Oosthuizens Attorneys",
     "name": "Oosthuizens",
-    "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
+    "service": "Branding | Web Design & Development",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
 }, {
     "client": "PR Engineering",
     "name": "PR-Engineering",
-    "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
+    "service": "Branding | Graphic Design | Web Design & Development",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
 }, {
     "client": "Craft Consulting",
     "name": "Craft-Consulting",
-    "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
+    "service": " Web Design & Development",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
 }, {
     "client": "GEMMA Institute",
     "name": "Gemma",
+    "service": " Web Design & Development",
+    "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
+}, {
+    "client": "HundredFold",
+    "name": "HundredFold",
     "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
+    "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
+}, {
+    "client": "Together Through Skills",
+    "name": "TTS",
+    "service": "Graphic Design",
+    "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
+}, {
+    "client": "The Mish Dish",
+    "name": "The-Mish-Dish",
+    "service": "Branding | Web Design & Development",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
 }]

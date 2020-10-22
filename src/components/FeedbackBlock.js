@@ -45,7 +45,7 @@ const FeedbackBlock = ({ feedback }) => {
                 <div className="feedback-block__heading__image">
                     <Img fluid={image} />
                 </div>
-                <div>
+                <div className="feedback-block__heading__client-details">
                     <h3>{feedback.client}</h3>
                     <h5>{feedback.service}</h5>
                 </div>

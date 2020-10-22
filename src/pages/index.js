@@ -107,11 +107,8 @@ const Home = ({ data }) => {
         headingSmall="Brands who loved working with us."
         classNameProp="home__section-feedback"
       >
-        <div className="container">
-          <div className="home__section-feedback__grid">
-            <FeedbackSlick />
-          </div>
-
+        <div className="home__section-feedback__grid">
+          <FeedbackSlick />
         </div>
       </Section>
 
@@ -121,11 +118,9 @@ const Home = ({ data }) => {
         classNameProp="home__section-ready"
         sectionSimple={true}
       >
-        <div className="container">
-          <button className="button button--centered">
-            <Link to="/contact">Get in Touch</Link>
-          </button>
-        </div>
+        <button className="button button--centered">
+          <Link to="/contact">Get in Touch</Link>
+        </button>
       </Section>
     </Layout >
   )
