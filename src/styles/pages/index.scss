@@ -71,6 +71,14 @@
         }
     }
 
+    &__section-feedback {
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    }
+
     &__section-ready {
         text-align: center;
     }

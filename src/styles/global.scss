@@ -17,13 +17,18 @@ body {
     margin: 0;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
     color: $lightgrey;
     transition: 0.3s ease-out;
 }
 
 body {
     position: relative;
+    overflow-x: hidden;
+
+    &.noscroll {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -109,8 +114,6 @@ body {
 
 @media (min-width: 768px) {
     .container {
-        padding-right: 1rem;
-        padding-left: 1rem;
         max-width: 720px;
     }
 }

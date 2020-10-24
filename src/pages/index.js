@@ -136,12 +136,14 @@ query ClientLogoImagesQuery {
       node {
         base
         childImageSharp {
-          fluid {
+          fluid  {
             aspectRatio
             base64
             sizes
             src
             srcSet
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

@@ -6,22 +6,10 @@ import "../styles/components/tech-stack.scss";
 const TechStack = () => {
     return (
         <div className="tech-stack__grid">
-            <div>
-                <i className="icon-html5"></i>
-                <p>HTML5</p>
-            </div>
-            <div>
-                <i className="icon-css3"></i>
-                <p>CSS3</p>
-            </div>
-            <div>
-                <i className="icon-javascript"></i>
-                <p>JavaScript</p>
-            </div>
-            <div>
-                <i className="icon-react"></i>
-                <p>ReactJS</p>
-            </div>
+            <i className="icon-html5"></i>
+            <i className="icon-css3"></i>
+            <i className="icon-javascript"></i>
+            <i className="icon-react"></i>
             <i className="icon-jquery"></i>
             <i className="icon-bootstrap"></i>
             <i className="icon-sass"></i>

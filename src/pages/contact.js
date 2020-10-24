@@ -12,7 +12,8 @@ const Contact = () => {
             pageMeta={{
                 title: "Contact | Webdacity",
                 description: "Contact Us",
-                canonical: "/contact"
+                canonical: "/contact",
+                classNameProp: "contact"
             }}
             landingTitle={
                 <h1 className="landing__inner__title">

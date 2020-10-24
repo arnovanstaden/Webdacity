@@ -50,4 +50,12 @@
     &__button {
         z-index: 5;
     }
+
+    @media (max-width: 768px) {
+        &__inner {
+            &__big {
+                font-size: 7rem;
+            }
+        }
+    }
 }

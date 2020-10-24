@@ -34,13 +34,18 @@
     "service": "Graphic Design | Web Design & Development | Motion Graphic Animation",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
 }, {
-    "client": "Together Through Skills",
-    "name": "TTS",
+    "client": "Asante2gether",
+    "name": "Asante2gether",
     "service": "Graphic Design",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
 }, {
     "client": "The Mish Dish",
     "name": "The-Mish-Dish",
     "service": "Branding | Web Design & Development",
+    "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
+}, {
+    "client": "LesleyD Training",
+    "name": "LesleyD",
+    "service": "Branding",
     "testimonial": "    Lorem ipsum dolor sit,    amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque."
 }]
