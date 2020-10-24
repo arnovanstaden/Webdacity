@@ -24,11 +24,11 @@ const Home = ({ data }) => {
         canonical: "/"
       }}
       landingTitle={
-        <h1 className="landing__inner__title">
+        <h1 className="landing__inner--title">
           We <span>Design</span>. We <span>Develop</span>. <br />
           We <span>Dare</span> to <span>Dream</span>.
           </h1>}
-      landingBig={<h1 className="landing__inner__big">Dare <br /> to Dream</h1>}
+      landingBig={<h1 className="landing__inner--big">Dare <br /> to Dream</h1>}
       landingButton={{
         to: "/portfolio",
         text: "View Our Work"
@@ -44,12 +44,12 @@ const Home = ({ data }) => {
       </Section>
 
       <Section
-        light="true"
+        light={true}
         headingBig="Clients"
         headingSmall="We’re trusted by brands of all sizes. You’ll be in good company."
-        classNameProp="home__section-clients"
+        classNameProp="section-clients"
       >
-        <div className="home__section-clients__grid">
+        <div className="section-clients__grid">
           {data.allFile.edges.map((image) =>
             (
               <div className="client__logo" key={uuidv4()}>
@@ -63,9 +63,9 @@ const Home = ({ data }) => {
       <Section
         headingBig="Services"
         headingSmall="We offer a holistic approach to your digital presence."
-        classNameProp="home__section-services"
+        classNameProp="section-services"
       >
-        <div className="home__section-services__grid">
+        <div className="section-services__grid">
 
           <ContentBlock
             heading="Development"
@@ -102,12 +102,12 @@ const Home = ({ data }) => {
       </Section>
 
       <Section
-        light="true"
+        light={true}
         headingBig="Feedback"
         headingSmall="Brands who loved working with us."
-        classNameProp="home__section-feedback"
+        classNameProp="section-feedback"
       >
-        <div className="home__section-feedback__grid">
+        <div className="section-feedback__grid">
           <FeedbackSlick />
         </div>
       </Section>
@@ -115,7 +115,7 @@ const Home = ({ data }) => {
       <Section
         headingBig="Ready?"
         headingSmall={"We collaborate with ambitious brands & people. Let's build something great together."}
-        classNameProp="home__section-ready"
+        classNameProp="section-ready"
         sectionSimple={true}
       >
         <button className="button button--centered">

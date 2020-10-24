@@ -15,14 +15,35 @@ const Landing = (props) => {
         return null
     }
 
+    const NormalLanding = (props) => {
+
+        return (
+            <>
+                <div className="landing__inner">
+                    {props.landingBig}
+                    {props.landingTitle}
+                </div >
+                <LandingButton content={props.landingButton} />
+            </>
+        )
+    }
+
+    const ProjectLanding = (props) => {
+        return (
+            <>
+                <div className="landing__inner--project">
+                    {props.landingBig}
+                    {/* {props.projectImage ? <img src={props.projectImage} /> : null} */}
+                </div >
+            </>
+        )
+    }
+
     return (
         <div className="landing">
-            <div className="landing__inner">
-                {props.landingBig}
-                {props.landingTitle}
-            </div>
-            <LandingButton content={props.landingButton} />
+            {props.projectImage ? <ProjectLanding {...props} /> : <NormalLanding {...props} />}
         </div>
+
     )
 }
 

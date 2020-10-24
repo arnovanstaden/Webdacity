@@ -74,7 +74,7 @@ body {
 
     a {
         display: block;
-        padding: 0.4rem 1rem;
+        padding: 0.4rem 1.5rem;
         color: $white;
         text-decoration: none;
         font-family: $headingfont;
@@ -84,10 +84,6 @@ body {
     &:hover {
         background-color: $blue;
         transition: 0.3s ease;
-
-        a {
-            // font-weight: 600;
-        }
     }
 
     &:focus {
@@ -158,4 +154,13 @@ body {
     right: 100%;
     width: 100%;
     height: 2px;
+}
+
+// Mixins
+
+@mixin box-shadow {
+    box-shadow: 15px 15px 15px rgba(10, 10, 10, 0.05);
+    -webkit-box-shadow: 15px 15px 15px rgba(10, 10, 10, 0.05);
+    -moz-box-shadow: 15px 15px 15px rgba(10, 10, 10, 0.05);
+    box-shadow: 15px 15px 15px rgba(10, 10, 10, 0.05);
 }

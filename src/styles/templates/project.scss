@@ -1,0 +1,86 @@
+@import "../global.scss";
+
+.project {
+    .test {
+        position: relative;
+        top: -15rem;
+        background-color: $grey;
+        img {
+            width: 50%;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .section-details {
+        .grid {
+            display: flex;
+            justify-content: space-between;
+
+            &__intro {
+                width: 47.5%;
+
+                h1 {
+                    color: $white;
+                    font-family: $headingfont;
+                    font-weight: 600;
+                    margin: 0;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 1px;
+                }
+
+                h4 {
+                    color: $blue;
+                    font-weight: 600;
+                    margin: 0.25rem 0 0 0;
+                    font-size: 0.9rem;
+                    margin: 0;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                    color: $white;
+                    margin: 0;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            &__details {
+                width: 47.5%;
+                background-color: $grey;
+                border-radius: 0.5rem;
+                padding: 1rem 2rem;
+                box-sizing: border-box;
+
+                &__row {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $lightgrey;
+                    padding: 0.75rem 0;
+
+                    h5 {
+                        color: $white;
+                        font-family: $headingfont;
+                        margin: 0;
+                        font-weight: 500;
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+
+                    &.row--tools {
+                        flex-direction: column;
+                        border-bottom: none;
+
+                        h5 {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 @import "../global.scss";
 
 .services {
-    &__section-development {
+    .section-development {
         &__grid {
             display: flex;
             flex-wrap: wrap;
@@ -30,7 +30,7 @@
         }
     }
 
-    &__section-design {
+    .section-design {
         &__grid {
             display: flex;
             justify-content: space-between;

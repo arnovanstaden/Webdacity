@@ -24,11 +24,11 @@ const About = ({ data }) => {
                 description: "About Us",
                 canonical: "/about"
             }} landingTitle={
-                <h1 className="landing__inner__title">
+                <h1 className="landing__inner--title">
                     We design and build amazing things <br />
                     that help you <span>grow</span> your business.
                   </h1>}
-            landingBig={<h1 className="landing__inner__big">Who <br /> We Are</h1>}
+            landingBig={<h1 className="landing__inner--big">Who <br /> We Are</h1>}
             classNameProp="about"
 
         >
@@ -61,7 +61,7 @@ const About = ({ data }) => {
             </Section>
 
             <Section
-                light="true"
+                light={true}
                 classNameProp="about__section-services"
             >
                 <ServiceTicker />
@@ -87,7 +87,7 @@ const About = ({ data }) => {
             </Section>
 
             <Section
-                light="true"
+                light={true}
                 classNameProp="about__section-stats"
             >
                 <div className="about__section-stats__grid">

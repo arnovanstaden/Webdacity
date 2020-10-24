@@ -1,0 +1,21 @@
+[{
+    "name": "Oosthuizens",
+    "type": "Development",
+    "services": "Branding | Web Design & Development",
+    "link": "https://www.oosthuizens.co.za",
+    "date": "April 2020",
+    "industry": "Legal",
+    "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+    "description": "Oosthuizens Attorneys requested a minimalist site where potential clients can reach them,learn more about their history and the legal services they offer, and also get in touch with them regarding legal advice.",
+    "imagePath": "Oosthuizens"
+}, {
+    "name": "Gemma Institute",
+    "type": "Development",
+    "services": "Web Design & Development",
+    "link": "https://www.gemmainstitute.com",
+    "date": "July 2020",
+    "industry": "Medical",
+    "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+    "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+    "imagePath": "Gemma"
+}]

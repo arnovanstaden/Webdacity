@@ -4,7 +4,6 @@ import classNames from "classnames";
 import GreySkew from "../assets/images/sections/grey.svg";
 import BlackSkew from "../assets/images/sections/black.svg";
 
-
 const Section = (props) => {
 
     const SectionSkew = (props) => {
@@ -27,7 +26,10 @@ const Section = (props) => {
                 </div>
             )
         }
-        return null
+        return (
+            <div className="section__heading">
+            </div>
+        )
     }
 
     var sectionClass = classNames({

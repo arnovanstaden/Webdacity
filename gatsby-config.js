@@ -5,6 +5,7 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -24,7 +25,14 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/assets/images/`
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/assets/data/`,
+      }
+    },
   ],
   siteMetadata: {
     title: "Webdacity Studio",

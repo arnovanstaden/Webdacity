@@ -1,7 +1,7 @@
 @import "../global.scss";
 
 .home {
-    &__section-clients {
+    .section-clients {
         &__grid {
             display: flex;
             padding: 0 10%;
@@ -41,7 +41,7 @@
     }
 
     //
-    &__section-services {
+    .section-services {
         &__grid {
             display: flex;
             justify-content: space-between;
@@ -71,7 +71,7 @@
         }
     }
 
-    &__section-feedback {
+    .section-feedback {
         @media (max-width: 576px) {
             .container {
                 padding: 0 1rem;
@@ -79,7 +79,7 @@
         }
     }
 
-    &__section-ready {
+    .section-ready {
         text-align: center;
     }
 }

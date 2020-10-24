@@ -16,11 +16,11 @@ const Contact = () => {
                 classNameProp: "contact"
             }}
             landingTitle={
-                <h1 className="landing__inner__title">
+                <h1 className="landing__inner--title">
                     We’re always interested in hearing <br />
                     about <span>new projects</span>.
             </h1>}
-            landingBig={<h1 className="landing__inner__big">Let's Work <br /> Together</h1>}
+            landingBig={<h1 className="landing__inner--big">Let's Work <br /> Together</h1>}
         >
 
             <section className="contact">
