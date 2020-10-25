@@ -34,7 +34,7 @@ const Landing = (props) => {
                 <div className="landing__inner--project">
                     {props.landingBig}
                     <div>
-                        <Img fluid={props.projectImage.childImageSharp.fluid} style={{ width: "100%" }} />
+                        {/* <Img fluid={props.projectImage.childImageSharp.fluid} style={{ width: "100%" }} /> */}
                     </div>
                 </div >
             </>

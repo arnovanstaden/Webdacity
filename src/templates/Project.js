@@ -65,7 +65,7 @@ const PageTemplate = ({ data }) => {
             <Section
                 light={true}
                 classNameProp="section-gallery">
-                <Img fluid={data.landingImage.childImageSharp.fluid} />
+                {/* <Img fluid={data.landingImage.childImageSharp.fluid} /> */}
             </Section>
 
         </Layout>
