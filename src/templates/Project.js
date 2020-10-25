@@ -1,17 +1,26 @@
 import { graphql } from "gatsby";
 import React from "react";
+import Img from "gatsby-image";
 
 // Components
 import Layout from "../components/layout";
 import Section from "../components/Section";
 
-import Image from "../assets/images/projects/Oosthuizens/landing.jpg"
 
 // Styles
 import "../styles/templates/project.scss";
 
 const PageTemplate = ({ data }) => {
     const project = data.allSitePage.edges[0].node.context;
+
+    const WebsiteLink = () => {
+        return (
+            <button className="button">
+                <a href={project.link} target="blank">Visit Website</a>
+            </button>
+        )
+    }
+
     return (
         <Layout
             pageMeta={{
@@ -21,7 +30,7 @@ const PageTemplate = ({ data }) => {
             }}
             landingBig={<h1 className="landing__inner--big">{project.name}</h1>}
             classNameProp="project"
-            projectImage={Image}
+            projectImage={data.landingImage}
         >
 
             <Section
@@ -32,9 +41,7 @@ const PageTemplate = ({ data }) => {
                         <h1>{project.name}</h1>
                         <h4>{project.services}</h4>
                         <p>{project.description}</p>
-                        <button className="button">
-                            <a href={project.link} target="nlabk">Visit Website</a>
-                        </button>
+                        {project.type === "Development" ? <WebsiteLink /> : null}
                     </div>
                     <div className="grid__details">
                         <div className="grid__details__row">
@@ -46,8 +53,10 @@ const PageTemplate = ({ data }) => {
                             <p>{project.industry}</p>
                         </div>
                         <div className="grid__details__row row--tools">
-                            <h5>Tools</h5>
-                            <p>{project.tools.replace(/,/g, "  |  ")}</p>
+
+                            {project.type === "Development" ? <h5>Tools</h5> : <h5>Design Elements</h5>}
+                            {project.type === "Development" ? <p>{project.tools.replace(/,/g, "  |  ")}</p> : <p>{project.elements.replace(/,/g, "  |  ")}</p>}
+
                         </div>
                     </div>
                 </div>
@@ -56,7 +65,7 @@ const PageTemplate = ({ data }) => {
             <Section
                 light={true}
                 classNameProp="section-gallery">
-
+                <Img fluid={data.landingImage.childImageSharp.fluid} />
             </Section>
 
         </Layout>
@@ -66,7 +75,7 @@ const PageTemplate = ({ data }) => {
 export default PageTemplate
 
 export const query = graphql`
-query($path: String) {
+query ($path: String) {
     allSitePage(filter: {path: {eq: $path}}) {
       edges {
         node {
@@ -79,10 +88,11 @@ query($path: String) {
             date
             industry
             description
+            elements
+            imagePath
           }
         }
       }
     }
   }
-  
 `

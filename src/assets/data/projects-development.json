@@ -1,0 +1,133 @@
+[{
+        "name": "Oosthuizens",
+        "type": "Development",
+        "services": "Web Design & Development",
+        "link": "https://www.oosthuizens.co.za",
+        "date": "April 2020",
+        "industry": "Legal",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Oosthuizens Attorneys requested a minimalist site where potential clients can reach them,learn more about their history and the legal services they offer, and also get in touch with them regarding legal advice.",
+        "imagePath": "Development/Oosthuizens-Attorneys"
+    }, {
+        "name": "Gemma Institute",
+        "type": "Development",
+        "services": "Web Design & Development",
+        "link": "https://www.gemmainstitute.com",
+        "date": "May 2020",
+        "industry": "Medical",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap, ExpressJS, NodeJS",
+        "description": "The GEMMA Institute is a Psychotherapy Clinic based in Frankfurt, Germany. They assist individuals, couples and families experiencing personal and social challenges.\n\nWe met their needs by creating a clean & modern website where they can effectively communicate their therapeutic concept and how their therapy works. Custom functionality includes the ability for patients to apply for & complete the relevant consent documentation online, as well as provide feedback for their sessions at the clinic.",
+        "imagePath": "Development/Gemma-Institute"
+    }, {
+        "name": "PR Engineering",
+        "type": "Development",
+        "services": "Web Design & Development",
+        "link": "https://www.engpr.com",
+        "date": "June 2019",
+        "industry": "Engineering",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+        "imagePath": "Development/"
+    }, {
+        "name": "Varkhart",
+        "type": "Development",
+        "services": "Web Design & Development | Web Application Development",
+        "link": "https://www.varkhart.co.za",
+        "date": "April 2020",
+        "industry": "Online Shopping",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap, ExpressJS, NodeJS, MongoDB",
+        "description": "Varkhart started as a small e-commerce store but has since grown to a vast online retail endeavour with a substantial online presence. Originally built upon our custom e-commerce platform, it has since grown to encompass fully-fledged reseller & affiliate programs. \n\nWe were involved for every step of the project, from branding to product development. If you'd like to check it out for yourself, head over to",
+        "imagePath": "Development/"
+    }, {
+        "name": "Hundredfold",
+        "type": "Development",
+        "services": "Web Design & Development",
+        "link": "https://www.hundredfold.co.za",
+        "date": "October 2020",
+        "industry": "Finance | Business",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+        "imagePath": "Development/"
+    }, {
+        "name": "Africaneur IQ",
+        "type": "Development",
+        "services": "Web Design & Development",
+        "link": "https://www.africaneuriq.co.za/",
+        "date": "July 2019",
+        "industry": "Finance | Business",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+        "imagePath": "Development/"
+    }, {
+        "name": "SmartFunder",
+        "type": "Development",
+        "services": "Web Design & Development | Web Application Development",
+        "link": "https://www.smartfunder.co.za",
+        "date": "October 2019",
+        "industry": "Education | Finance",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "SmartFunder is a mechanism for Employers in South Africa to assist their employees to pay school fees in a smarter, more tax-efficient way. They wanted a website that reflects their friendly, user-centric brand and provides information regarding their services in a simple, easy-to-understand way. Their main goal was to explain how their business model works and answer any lingering questions.",
+        "imagePath": "Development/"
+    }, {
+        "name": "Reset Capital",
+        "type": "Development",
+        "services": "Web Design & Development",
+        "link": "https://www.resetcapital.co.za",
+        "date": "June 2019",
+        "industry": "Finance | Business",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+        "imagePath": "Development/"
+    }, {
+        "name": "NC Chemicals",
+        "type": "Development",
+        "services": "Web Design & Development | Web Application Development",
+        "link": "https://www.ncchemicals.co.za",
+        "date": "May 2020",
+        "industry": "Manufacturing",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+        "imagePath": "Development/"
+    }, {
+        "name": "Craft Consulting",
+        "type": "Development",
+        "services": "Web Design & Development",
+        "link": "https://www.craft-sa.co.za",
+        "date": "September 2020",
+        "industry": "Engineering",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+        "imagePath": "Development/"
+    }, {
+        "name": "The Mish Dish",
+        "type": "Development",
+        "services": "Web Design & Development | Web Application Development",
+        "link": "https://www.themishdish.co.za",
+        "date": "February 2020",
+        "industry": "Blog",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+        "imagePath": "Development/"
+    }, {
+        "name": "CCPT",
+        "type": "Development",
+        "services": "Web Design & Development",
+        "link": "https://www.ccptech.co.za",
+        "date": "October 2020",
+        "industry": "Engineering",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+        "imagePath": "Development/"
+    }, {
+        "name": "Isaacson Ladders",
+        "type": "Development",
+        "services": "Web Design & Development",
+        "link": "https://www.isaacsonladders.co.za",
+        "date": "February 2020",
+        "industry": "Manufacturing",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
+        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
+        "imagePath": "Development/"
+    }
+
+]

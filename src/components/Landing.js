@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/components/landing.scss";
-import { Link } from "gatsby"
+import { Link } from "gatsby";
+import Img from "gatsby-image";
 
 const Landing = (props) => {
 
@@ -16,7 +17,6 @@ const Landing = (props) => {
     }
 
     const NormalLanding = (props) => {
-
         return (
             <>
                 <div className="landing__inner">
@@ -33,15 +33,16 @@ const Landing = (props) => {
             <>
                 <div className="landing__inner--project">
                     {props.landingBig}
-                    {/* {props.projectImage ? <img src={props.projectImage} /> : null} */}
+                    <div>
+                        <Img fluid={props.projectImage.childImageSharp.fluid} style={{ width: "100%" }} />
+                    </div>
                 </div >
             </>
         )
     }
-
     return (
         <div className="landing">
-            {props.projectImage ? <ProjectLanding {...props} /> : <NormalLanding {...props} />}
+            {props.classNameProp === "project" ? <ProjectLanding {...props} /> : <NormalLanding {...props} />}
         </div>
 
     )

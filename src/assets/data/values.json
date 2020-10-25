@@ -1,25 +1,24 @@
 [{
         "name": "Client Satisfaction",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ad dolorem eaque. Ipsum deleniti harum dolor, cupiditate debitis exercitationem natus!"
-    },
-    {
-        "name": "Transparency",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ad dolorem eaque. Ipsum deleniti harum dolor, cupiditate debitis exercitationem natus!"
-    },
-    {
-        "name": "Clear Communication",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ad dolorem eaque. Ipsum deleniti harum dolor, cupiditate debitis exercitationem natus!"
-    },
-    {
-        "name": "Low Costs",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ad dolorem eaque. Ipsum deleniti harum dolor, cupiditate debitis exercitationem natus!"
-    },
-    {
-        "name": "Innovative Solutions",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ad dolorem eaque. Ipsum deleniti harum dolor, cupiditate debitis exercitationem natus!"
+        "description": "We know that client satisfaction is not only about the delivery of great services on-time and by exceeding expectations, its also about being a dependable long-term partner for your business."
     },
     {
         "name": "Great Design",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ad dolorem eaque. Ipsum deleniti harum dolor, cupiditate debitis exercitationem natus!"
+        "description": "Our websites & applications always look great and are intuitive to use. We put the extra effort into designing an attractive product that  users will fall in love with."
+    }, {
+        "name": "Transparency",
+        "description": "Clients are involved and we provide feedback, advice & recommendation every step during the project lifecycle. We are also fully transparent & upfront regarding all costs involved in projects."
+    },
+    {
+        "name": "Building Relationships",
+        "description": "There is nothing more rewarding to us than being with a business that grows as a result of our work. Building a long-term relationship with our clients is essential to our own growth as a studio."
+    },
+    {
+        "name": "Exceptional Quality",
+        "description": "Whether it’s for design, content marketing, or development we use the best practices available to deliver the highest quality projects.Our pride in our work that gives us our signature quality."
+    },
+    {
+        "name": "Innovative Solutions",
+        "description": "Knowing the difference between innovation and the latest fad is how we deliver such incredible results for our clients. Recognising great innovation that delivers longterm-value is a top priority."
     }
 ]

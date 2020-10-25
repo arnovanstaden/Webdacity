@@ -1,14 +1,24 @@
 const path = require(`path`);
-const data = require("./src/assets/data/projects.json")
+const developmentProjects = require("./src/assets/data/projects-development.json")
+const designProjects = require("./src/assets/data/projects-design.json")
 
 exports.createPages = ({ actions }) => {
     const { createPage } = actions
     const PageTemplate = path.resolve("./src/templates/Project.js")
 
-    data.forEach(project => {
+    developmentProjects.forEach(project => {
         const projectName = project.name.replace(/ /g, "");
         createPage({
-            path: `/project/${projectName}`,
+            path: `/portfolio/${projectName}`,
+            component: PageTemplate,
+            context: project,
+        })
+    });
+
+    designProjects.forEach(project => {
+        const projectName = project.name.replace(/ /g, "");
+        createPage({
+            path: `/portfolio/design/${projectName}`,
             component: PageTemplate,
             context: project,
         })

@@ -19,6 +19,8 @@
 
             &__intro {
                 width: 47.5%;
+                padding-right: 3rem;
+                box-sizing: border-box;
 
                 h1 {
                     color: $white;
@@ -43,6 +45,7 @@
                     color: $white;
                     margin: 0;
                     margin-bottom: 2rem;
+                    line-height: 1.5;
                 }
             }
 
@@ -79,6 +82,19 @@
                             margin-bottom: 0.5rem;
                         }
                     }
+                }
+            }
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+                &__intro {
+                    width: 100%;
+                    text-align: center;
+                    padding: 0;
+                }
+
+                &__details {
+                    width: 100%;
                 }
             }
         }

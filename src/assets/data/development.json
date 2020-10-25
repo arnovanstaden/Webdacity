@@ -1,33 +1,33 @@
 [{
         "name": "Custom Design",
-        "description": "amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad"
+        "description": "We don't produce cookie-cutter or template-based websites. All our projects are niche, custom built & designed from the ground up, the way you envisioned & without any compromises."
     },
     {
         "name": "Innovative Solutions",
-        "description": "amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad"
+        "description": "We apply all the tools at our disposal to implement best practices regarding performance, accessibility, security and usability. This results in super-fast load times and happy customers."
     },
     {
         "name": "Brand Symbioses",
-        "description": "amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad"
+        "description": "It's important that any public-facing project undertaken, be it design or develop or development, connects in flawlessly with your brands' image and branding guidelines. "
     },
     {
         "name": "API Integration",
-        "description": "amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad"
+        "description": "Integrate rich third party data to enhance the user experience of your website. Google Cloud Platform, geo-location services, currency converters. You name it and we integrate it."
     },
     {
         "name": "E-Commerce Integration",
-        "description": "amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad"
+        "description": "Take your online store to a new level with incredible design flexibility with our custom-built e-commerce platform, or connect another platform of your choice."
     },
     {
-        "name": "CMS",
-        "description": "amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad"
+        "name": "Responsiveness",
+        "description": "It's the 2020's. Your site needs to render flawlessly and look exceptional across all devices. All our projects are fully responsive and cross-browser-compatible right out of the box. "
     },
     {
         "name": "Technical SEO",
-        "description": "amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad"
+        "description": "It's important that search engines, like Google, index your website so it can be found in search results. All our projects ship with the technical side baked-in."
     },
     {
-        "name": "Maintenance",
-        "description": "amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad"
+        "name": "Custom Feature Development",
+        "description": "Take away the heavy lifting of manual tasks with our innovative solutions, such as user authentication, payment portals, booking systems, communications systems & API integration etc."
     }
 ]

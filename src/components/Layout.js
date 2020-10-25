@@ -22,7 +22,7 @@ const Layout = (props) => {
         <>
             <Head pageMeta={props.pageMeta} />
             <Header />
-            <Landing landingTitle={props.landingTitle} landingBig={props.landingBig} landingButton={props.landingButton} />
+            <Landing {...props} />
             <main className={props.classNameProp}>
                 {props.children}
             </main>
