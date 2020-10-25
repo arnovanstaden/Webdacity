@@ -3,7 +3,7 @@ import React from "react";
 import Img from "gatsby-image";
 
 // Components
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Section from "../components/Section";
 
 
