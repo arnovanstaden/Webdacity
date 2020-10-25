@@ -1,4 +1,4 @@
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import React from "react";
 import Img from "gatsby-image";
 
@@ -6,9 +6,10 @@ import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 
-
 // Styles
 import "../styles/templates/project.scss";
+import LogoMark from "../assets/images/icons/content-block.svg";
+
 
 const PageTemplate = ({ data }) => {
     const project = data.allSitePage.edges[0].node.context;
@@ -21,6 +22,15 @@ const PageTemplate = ({ data }) => {
         )
     }
 
+    const DesignLink = () => {
+        const link = "portfolio/design/" + project.name.replace(/,/g, "  |  ");
+        return (
+            <button className="button">
+                <Link to={link}>View Design Work</Link>
+            </button>
+        )
+    }
+    console.log(project.design)
     return (
         <Layout
             pageMeta={{
@@ -38,10 +48,14 @@ const PageTemplate = ({ data }) => {
             >
                 <div className="grid">
                     <div className="grid__intro">
-                        <h1>{project.name}</h1>
+                        <div className="grid__intro__name">
+                            <img src={LogoMark} alt="" />
+                            <h1>{project.name}</h1>
+                        </div>
                         <h4>{project.services}</h4>
                         <p>{project.description}</p>
                         {project.type === "Development" ? <WebsiteLink /> : null}
+                        {project.design ? <DesignLink className="grid__intro__link-design" /> : null}
                     </div>
                     <div className="grid__details">
                         <div className="grid__details__row">

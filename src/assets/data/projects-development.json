@@ -1,5 +1,5 @@
 [{
-        "name": "Oosthuizens",
+        "name": "Oosthuizens Attorneys",
         "type": "Development",
         "services": "Web Design & Development",
         "link": "https://www.oosthuizens.co.za",
@@ -15,7 +15,7 @@
         "link": "https://www.gemmainstitute.com",
         "date": "May 2020",
         "industry": "Medical",
-        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap, ExpressJS, NodeJS",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap,ExpressJS,NodeJS",
         "description": "The GEMMA Institute is a Psychotherapy Clinic based in Frankfurt, Germany. They assist individuals, couples and families experiencing personal and social challenges.\n\nWe met their needs by creating a clean & modern website where they can effectively communicate their therapeutic concept and how their therapy works. Custom functionality includes the ability for patients to apply for & complete the relevant consent documentation online, as well as provide feedback for their sessions at the clinic.",
         "imagePath": "Development/Gemma-Institute"
     }, {
@@ -26,8 +26,9 @@
         "date": "June 2019",
         "industry": "Engineering",
         "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
-        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
-        "imagePath": "Development/"
+        "description": "PR Engineering is a  consulting engineering firm providing comprehensive and value-driven design and project management services. \n\nThey were in the market for a website with the primary focus being to exhibit their past & current engineering products to prospective new clients. The website also needed to properly showcase the cast array of professional services they offer & other important information relating to the company.",
+        "imagePath": "Development/PR-Engineering",
+        "design": true
     }, {
         "name": "Varkhart",
         "type": "Development",
@@ -35,9 +36,9 @@
         "link": "https://www.varkhart.co.za",
         "date": "April 2020",
         "industry": "Online Shopping",
-        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap, ExpressJS, NodeJS, MongoDB",
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap,ExpressJS,NodeJS,MongoDB",
         "description": "Varkhart started as a small e-commerce store but has since grown to a vast online retail endeavour with a substantial online presence. Originally built upon our custom e-commerce platform, it has since grown to encompass fully-fledged reseller & affiliate programs. \n\nWe were involved for every step of the project, from branding to product development. If you'd like to check it out for yourself, head over to",
-        "imagePath": "Development/"
+        "imagePath": "Development/Varkhart"
     }, {
         "name": "Hundredfold",
         "type": "Development",
@@ -45,9 +46,10 @@
         "link": "https://www.hundredfold.co.za",
         "date": "October 2020",
         "industry": "Finance | Business",
-        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
-        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
-        "imagePath": "Development/"
+        "tools": "HTML,CSS,Javascript,JQuery,ReactJS,Gatsby",
+        "description": "Hundredfold is an African focus strategy company that prides itself in international networks and global collaborations. \n\nThey were in need of a sleek & modern brand identity and accompanying website to show off their capabilities & the industries they operate in.",
+        "imagePath": "Development/Hundredfold",
+        "design": true
     }, {
         "name": "Africaneur IQ",
         "type": "Development",
@@ -55,9 +57,9 @@
         "link": "https://www.africaneuriq.co.za/",
         "date": "July 2019",
         "industry": "Finance | Business",
-        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
-        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
-        "imagePath": "Development/"
+        "tools": "HTML,CSS,Javascript,JQuery",
+        "description": "AfricaneurIQ (AIQ) is a professional service company that delivers rapid, equitable and sustainable economic transformation through Enterprise and Supplier Development. \n\nThey had a well-crafted brand identity and required a website revamp that truly captures their existing brand image and defines what they do in a succinct and easy to digest manner. ",
+        "imagePath": "Development/Africaneur-IQ"
     }, {
         "name": "SmartFunder",
         "type": "Development",
@@ -67,7 +69,7 @@
         "industry": "Education | Finance",
         "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
         "description": "SmartFunder is a mechanism for Employers in South Africa to assist their employees to pay school fees in a smarter, more tax-efficient way. They wanted a website that reflects their friendly, user-centric brand and provides information regarding their services in a simple, easy-to-understand way. Their main goal was to explain how their business model works and answer any lingering questions.",
-        "imagePath": "Development/"
+        "imagePath": "Development/SmartFunder"
     }, {
         "name": "Reset Capital",
         "type": "Development",
@@ -75,9 +77,10 @@
         "link": "https://www.resetcapital.co.za",
         "date": "June 2019",
         "industry": "Finance | Business",
-        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
-        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
-        "imagePath": "Development/"
+        "tools": "HTML,CSS,Javascript,JQuery",
+        "description": "Reset Capital (RC) is an investment firm with a unique focus on investment opportunities in BEE companies. \n\nTheir site features content regarding their funding principles and investment focus, presented in a clean and minimalistic fashion.",
+        "imagePath": "Development/Reset-Capital",
+        "design": true
     }, {
         "name": "NC Chemicals",
         "type": "Development",
@@ -86,8 +89,9 @@
         "date": "May 2020",
         "industry": "Manufacturing",
         "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
-        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
-        "imagePath": "Development/"
+        "description": "NC Chemicals is a manufacturer and distributor of cleaning chemicals for the car wash and industrial industry. \n\nThey originally needed a simple online presence featuring who they are and what they do, as well as accompanying print documents to be designed showcasing their product catalogue. \n\nWe recommended integrating our e-commerce platform into their website to function as a one-stop-shop to showcase & sell their products online, from anywhere.",
+        "imagePath": "Development/NC-Chemicals",
+        "design": true
     }, {
         "name": "Craft Consulting",
         "type": "Development",
@@ -95,9 +99,9 @@
         "link": "https://www.craft-sa.co.za",
         "date": "September 2020",
         "industry": "Engineering",
-        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
-        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
-        "imagePath": "Development/"
+        "tools": "HTML,CSS,Javascript,JQuery",
+        "description": "Craft Consulting is a Cape Town based Civil & Structural Engineering firm. \n\nThey needed a minimalist & clean website to showcase their services & previous projects. They struggled with establishing a good design with the DIY website builder Wix and required professional help with their website's redesign. \n\nThey requested to keep the dark & moody theme, but with a complete design overhaul & updated content to match their current brand image. ",
+        "imagePath": "Development/Craft-Consulting"
     }, {
         "name": "The Mish Dish",
         "type": "Development",
@@ -105,9 +109,9 @@
         "link": "https://www.themishdish.co.za",
         "date": "February 2020",
         "industry": "Blog",
-        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
-        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
-        "imagePath": "Development/"
+        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap,ExpressJS,NodeJS,MongoDB",
+        "description": "The Mish Dish as a unique & personalised food-blog with a twist. \n\nOriginally starting off with a Weebly site, Mish realised the inherent shortcomings of a WYSIWYG website builder and requested we help her with setting up a food blog. \n\nShe required the ability to administer the recipes themselves and needed the blog to have a unique UX & UI that enticed readers to return.",
+        "imagePath": "Development/The-Mish-Dish"
     }, {
         "name": "CCPT",
         "type": "Development",
@@ -115,9 +119,10 @@
         "link": "https://www.ccptech.co.za",
         "date": "October 2020",
         "industry": "Engineering",
-        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
-        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
-        "imagePath": "Development/"
+        "tools": "HTML,CSS,Javascript,ReactJS,Gatsby",
+        "description": "Cape Control Panel Technology (CCPT) is an engineering firm that builds specialised power and control panels. \n\nThey needed a concise website showcasing their capabilities, their team of experts and projects they 've undertaken in the past.",
+        "imagePath": "Development/CCPT",
+        "design": true
     }, {
         "name": "Isaacson Ladders",
         "type": "Development",
@@ -125,9 +130,9 @@
         "link": "https://www.isaacsonladders.co.za",
         "date": "February 2020",
         "industry": "Manufacturing",
-        "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
-        "description": "Lorem ipsum dolor sit,amet consectetur adipisicing elit.Delectus incidunt quis a ? Quam assumenda provident odit et magnam possimus sed blanditiis asperiores porro ad quidem doloremque doloribus,    ipsam,    nam dolore beatae itaque.",
-        "imagePath": "Development/"
+        "tools": "HTML,CSS,Javascript,JQuery",
+        "description": "Isaacson Ladders is a manufacturer based in Johannesburg that produces & wholesales ladders, castors, trolleys and wheels. \n\nThey required a website revamp that works in symbioses with their current brand and functions as a platform to showcase a catalogue of the products they manufacture, as well as provide valuable information relating to the company. ",
+        "imagePath": "Development/Isaacson-Ladders"
     }
 
 ]

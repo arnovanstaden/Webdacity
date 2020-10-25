@@ -16,19 +16,30 @@
         .grid {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
 
             &__intro {
                 width: 47.5%;
                 padding-right: 3rem;
                 box-sizing: border-box;
 
-                h1 {
-                    color: $white;
-                    font-family: $headingfont;
-                    font-weight: 600;
-                    margin: 0;
+                &__name {
+                    display: flex;
+                    align-items: center;
                     margin-bottom: 0.5rem;
-                    letter-spacing: 1px;
+
+                    h1 {
+                        color: $white;
+                        font-family: $headingfont;
+                        font-weight: 600;
+                        margin: 0;
+                        letter-spacing: 1px;
+                    }
+
+                    img {
+                        width: 1.5rem;
+                        margin-right: 0.75rem;
+                    }
                 }
 
                 h4 {
@@ -46,6 +57,11 @@
                     margin: 0;
                     margin-bottom: 2rem;
                     line-height: 1.5;
+                    white-space: pre-wrap;
+                }
+
+                &__link-design {
+                    margin-left: 1rem;
                 }
             }
 
@@ -72,6 +88,7 @@
 
                     p {
                         margin: 0;
+                        line-height: 1.5;
                     }
 
                     &.row--tools {
@@ -87,10 +104,16 @@
 
             @media (max-width: 768px) {
                 flex-wrap: wrap;
+                row-gap: 3rem;
+
                 &__intro {
                     width: 100%;
                     text-align: center;
                     padding: 0;
+
+                    &__name {
+                        justify-content: center;
+                    }
                 }
 
                 &__details {
