@@ -6,7 +6,7 @@
         "industry": "Training",
         "elements": "Logo, Business Cards, Email Signatures",
         "description": "LesleyD specialises in corporate training & teaching mindfulness practices to employees at large corporates. The colour psychology of blue symbolises calm, confidence & trust; whilst her broad range of services needed a logomark that represents them all.",
-        "imagePath": "Design/LesleyD-Training"
+        "imgPath": "projects/design/LesleyD-Training"
     },
     {
         "name": "Asante2gether",
@@ -16,7 +16,8 @@
         "industry": "Skills Development",
         "elements": "Logo, Business Cards, Email Signatures, Company Profile",
         "description": "Asante2gether assists local communities to generate income, to find their purpose, and to enable self-sufficiency. \n\n We created a friendly and clean brand identity for Asante2gether that portrays their journey in assisting with skills-development to help people move from poverty to prosperity.",
-        "imagePath": "Design/Asante2gether"
+        "imgPath": "projects/design/Asante2gether"
+
     },
     {
         "name": "Reset Capital",
@@ -26,26 +27,30 @@
         "industry": "Finance | Business",
         "elements": "Logo, Business Cards, Email Signatures",
         "description": "Reset Capital (RC) is an investment firm based in Johannesburg with a unique focus on investment opportunities in BEE companies. \n The design elements include Logos, Business Cards, Email Signatures, Letterheads & Presentation Design.",
-        "imagePath": "Design/Reset-Capital"
+        "development": true,
+        "imgPath": "projects/design/LesleyD-Training"
+
     },
     {
         "name": "Together Trough Skills",
         "type": "Design",
         "services": "Branding Identity",
         "date": "August 2020",
-        "industry": "",
+        "industry": "Skills Development",
         "elements": "Logo, Business Cards, Email Signatures, Company Profile",
         "description": "",
-        "imagePath": "Design/Together-Trough-Skills"
+        "imgPath": "projects/design/Together-Trough-Skills"
+
     },
     {
-        "name": "",
+        "name": "PR Engineering",
         "type": "Design",
         "services": "Branding Identity",
-        "date": "July 2020",
-        "industry": "",
-        "elements": "Logo, Business Cards, Email Signature",
+        "date": "March 2019",
+        "industry": "Engineering",
+        "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
         "description": "",
-        "imagePath": "Design/"
+        "development": true,
+        "imgPath": "projects/design/PR-Engineering"
     }
 ]

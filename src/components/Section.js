@@ -7,13 +7,10 @@ import BlackSkew from "../assets/images/sections/black.svg";
 const Section = (props) => {
 
     const SectionSkew = (props) => {
-        if (props.light) {
-            return (
-                <img src={BlackSkew} alt="Black Section Skew" />
-            )
-        }
         return (
-            <img src={GreySkew} alt="Grey Section Skew" />
+            <div className="section__skew">
+                {props.light ? <img src={BlackSkew} alt="Black Section Skew" /> : <img src={GreySkew} alt="Grey Section Skew" />}
+            </div>
         )
     }
 
@@ -40,9 +37,7 @@ const Section = (props) => {
 
     return (
         <section className={sectionClass}>
-            <div className="section__skew">
-                <SectionSkew light={props.light} />
-            </div>
+            {props.skew === false ? null : <SectionSkew light={props.light} />}
             <div className="container">
                 <SectionHeading headingBig={props.headingBig} headingSmall={props.headingSmall} />
                 {props.children}

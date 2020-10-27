@@ -24,11 +24,11 @@ const Services = () => {
                 canonical: "/services"
             }}
             landingTitle={
-                <h1 className="landing__inner--title">
+                <h3>
                     We merge innovative <span>solutions</span><br />
                     with impeccable <span>design</span>.
-                </h1>}
-            landingBig={<h1 className="landing__inner--big">What <br /> We Do</h1>}
+                </h3>}
+            landingBig={<h1>What <br /> We Do</h1>}
             classNameProp="services"
         >
 

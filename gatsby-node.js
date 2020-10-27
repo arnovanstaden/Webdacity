@@ -11,7 +11,10 @@ exports.createPages = ({ actions }) => {
         createPage({
             path: `/portfolio/${projectName}`,
             component: PageTemplate,
-            context: project,
+            context: {
+                project,
+                imgPath: project.imgPath
+            }
         })
     });
 
@@ -20,7 +23,10 @@ exports.createPages = ({ actions }) => {
         createPage({
             path: `/portfolio/design/${projectName}`,
             component: PageTemplate,
-            context: project,
+            context: {
+                project,
+                imgPath: project.imgPath
+            }
         })
     })
 }

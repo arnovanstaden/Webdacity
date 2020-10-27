@@ -23,12 +23,13 @@ const About = ({ data }) => {
                 title: "About | Webdacity",
                 description: "About Us",
                 canonical: "/about"
-            }} landingTitle={
-                <h1 className="landing__inner--title">
+            }}
+            landingTitle={
+                <h3>
                     We design and build amazing things <br />
                     that help you <span>grow</span> your business.
-                  </h1>}
-            landingBig={<h1 className="landing__inner--big">Who <br /> We Are</h1>}
+                  </h3>}
+            landingBig={<h1>Who <br /> We Are</h1>}
             classNameProp="about"
 
         >

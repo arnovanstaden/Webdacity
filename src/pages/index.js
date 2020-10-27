@@ -24,11 +24,11 @@ const Home = ({ data }) => {
         canonical: "/"
       }}
       landingTitle={
-        <h1 className="landing__inner--title">
+        <h3>
           We <span>Design</span>. We <span>Develop</span>. <br />
           We <span>Dare</span> to <span>Dream</span>.
-          </h1>}
-      landingBig={<h1 className="landing__inner--big">Dare <br /> to Dream</h1>}
+          </h3>}
+      landingBig={<h1>Dare <br /> to Dream</h1>}
       landingButton={{
         to: "/portfolio",
         text: "View Our Work"

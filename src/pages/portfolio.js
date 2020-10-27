@@ -10,11 +10,11 @@ const Portfolio = () => {
                 canonical: "/portfolio"
             }}
             landingTitle={
-                <h1 className="landing__inner--title">
+                <h3>
                     We <span>design</span> branding identities <br />
                     and <span>develop</span> fast &amp; beautiful websites.
-                  </h1>}
-            landingBig={<h1 className="landing__inner--big">Featured <br /> Projects</h1>}
+                  </h3>}
+            landingBig={<h1>Featured <br /> Projects</h1>}
         >
         </Layout>
     )

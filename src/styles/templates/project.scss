@@ -13,6 +13,11 @@
     }
 
     .section-details {
+        padding: 8rem 0;
+
+        .section__heading {
+            padding: 0;
+        }
         .grid {
             display: flex;
             justify-content: space-between;
@@ -20,7 +25,7 @@
 
             &__intro {
                 width: 47.5%;
-                padding-right: 3rem;
+                padding-right: 2rem;
                 box-sizing: border-box;
 
                 &__name {
@@ -60,8 +65,10 @@
                     white-space: pre-wrap;
                 }
 
-                &__link-design {
-                    margin-left: 1rem;
+                &__links {
+                    button:first-child {
+                        margin-right: 1rem;
+                    }
                 }
             }
 
@@ -102,9 +109,20 @@
                 }
             }
 
+            @media (max-width: 991px) {
+                &__intro {
+                    &__links {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1rem;
+                        align-items: flex-start;
+                    }
+                }
+            }
+
             @media (max-width: 768px) {
                 flex-wrap: wrap;
-                row-gap: 3rem;
+                row-gap: 4rem;
 
                 &__intro {
                     width: 100%;
@@ -113,6 +131,11 @@
 
                     &__name {
                         justify-content: center;
+                    }
+
+                    &__links {
+                        align-items: center;
+                        row-gap: 1.5rem;
                     }
                 }
 

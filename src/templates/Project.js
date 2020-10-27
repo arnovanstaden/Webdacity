@@ -11,8 +11,22 @@ import "../styles/templates/project.scss";
 import LogoMark from "../assets/images/icons/content-block.svg";
 
 
-const PageTemplate = ({ data }) => {
-    const project = data.allSitePage.edges[0].node.context;
+const PageTemplate = ({ pageContext, data }) => {
+
+    const project = pageContext.project;
+
+    const getImage = (name) => {
+        let edges = data.allFile.edges;
+        const item = edges.find(item => item.node.name === name);
+        if (item) {
+            return item.node.childImageSharp.fluid
+        }
+    }
+
+    const landingImage = getImage("landing");
+
+
+    // Components
 
     const WebsiteLink = () => {
         return (
@@ -23,14 +37,23 @@ const PageTemplate = ({ data }) => {
     }
 
     const DesignLink = () => {
-        const link = "portfolio/design/" + project.name.replace(/,/g, "  |  ");
+        const link = "/portfolio/design/" + project.name.replace(/ /g, "");
         return (
             <button className="button">
                 <Link to={link}>View Design Work</Link>
             </button>
         )
     }
-    console.log(project.design)
+
+    const DevelopmentLink = () => {
+        const link = "/portfolio/" + project.name.replace(/ /g, "");
+        return (
+            <button className="button">
+                <Link to={link}>View Development Work</Link>
+            </button>
+        )
+    }
+
     return (
         <Layout
             pageMeta={{
@@ -38,13 +61,14 @@ const PageTemplate = ({ data }) => {
                 description: "Webdacity is a Design & Development Studio based in Cape Town",
                 canonical: "/"
             }}
-            landingBig={<h1 className="landing__inner--big">{project.name}</h1>}
+            landingBig={project.name}
             classNameProp="project"
-            projectImage={data.landingImage}
+            landingImage={landingImage}
         >
 
             <Section
                 classNameProp="section-details"
+                skew={false}
             >
                 <div className="grid">
                     <div className="grid__intro">
@@ -54,8 +78,11 @@ const PageTemplate = ({ data }) => {
                         </div>
                         <h4>{project.services}</h4>
                         <p>{project.description}</p>
-                        {project.type === "Development" ? <WebsiteLink /> : null}
-                        {project.design ? <DesignLink className="grid__intro__link-design" /> : null}
+                        <div className="grid__intro__links">
+                            {project.type === "Development" ? <WebsiteLink /> : null}
+                            {project.design ? <DesignLink /> : null}
+                            {project.development ? <DevelopmentLink /> : null}
+                        </div>
                     </div>
                     <div className="grid__details">
                         <div className="grid__details__row">
@@ -67,20 +94,18 @@ const PageTemplate = ({ data }) => {
                             <p>{project.industry}</p>
                         </div>
                         <div className="grid__details__row row--tools">
-
                             {project.type === "Development" ? <h5>Tools</h5> : <h5>Design Elements</h5>}
                             {project.type === "Development" ? <p>{project.tools.replace(/,/g, "  |  ")}</p> : <p>{project.elements.replace(/,/g, "  |  ")}</p>}
-
                         </div>
                     </div>
                 </div>
             </Section>
 
-            <Section
-                light={true}
-                classNameProp="section-gallery">
-                {/* <Img fluid={data.landingImage.childImageSharp.fluid} /> */}
-            </Section>
+            <section
+                classNameProp="section-gallery"
+            >
+                <Img fluid={getImage("1")} />
+            </section>
 
         </Layout>
     )
@@ -89,24 +114,25 @@ const PageTemplate = ({ data }) => {
 export default PageTemplate
 
 export const query = graphql`
-query ($path: String) {
-    allSitePage(filter: {path: {eq: $path}}) {
-      edges {
-        node {
-          context {
-            type
-            tools
-            services
+query projectImages($imgPath: String) {
+    allFile(filter: {ext: {regex: "/(jpg)/"}, relativeDirectory: {eq: $imgPath}}) {
+        edges {
+          node {
+            base
             name
-            link
-            date
-            industry
-            description
-            elements
-            imagePath
+            childImageSharp {
+                fluid(maxWidth: 1920, quality: 100) {
+                aspectRatio
+                base64
+                sizes
+                src
+                srcSet
+                srcWebp
+              }
+            }
           }
         }
       }
     }
-  }
 `
+

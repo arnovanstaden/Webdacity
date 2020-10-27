@@ -2,8 +2,14 @@ import React from "react";
 import "../styles/components/landing.scss";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
+import classNames from "classnames"
 
 const Landing = (props) => {
+
+    let LandingClassNames = classNames({
+        "landing": true,
+        "landing--project": props.landingImage
+    })
 
     const LandingButton = (props) => {
         if (props.content) {
@@ -31,17 +37,19 @@ const Landing = (props) => {
     const ProjectLanding = (props) => {
         return (
             <>
-                <div className="landing__inner--project">
-                    {props.landingBig}
-                    <div>
-                        {/* <Img fluid={props.projectImage.childImageSharp.fluid} style={{ width: "100%" }} /> */}
+                <div className="landing__inner">
+                    <div className="landing__inner__name">
+                        <h1>{props.landingBig}</h1>
+                    </div>
+                    <div className="landing__inner__image">
+                        <Img fluid={props.landingImage} style={{ width: "100%" }} />
                     </div>
                 </div >
             </>
         )
     }
     return (
-        <div className="landing">
+        <div className={LandingClassNames}>
             {props.classNameProp === "project" ? <ProjectLanding {...props} /> : <NormalLanding {...props} />}
         </div>
 

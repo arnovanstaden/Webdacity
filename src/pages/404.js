@@ -11,11 +11,11 @@ const NotFound = () => {
                 robots: "noindex, nofollow"
             }}
             landingTitle={
-                <h1 className="landing__inner--title">
+                <h3>
                     Sorry, but the <span>page</span> you're<br />
                      looking for <span>doesn't exist</span>.
-                </h1>}
-            landingBig={<h1 className="landing__inner--big">Four <br /> Oh Four</h1>}
+                </h3>}
+            landingBig={<h1>Four <br /> Oh Four</h1>}
             classNameProp="services"
         >
 
