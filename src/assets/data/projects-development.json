@@ -35,7 +35,7 @@
     "description": "The GEMMA Institute is a Psychotherapy Clinic based in Frankfurt, Germany. They assist individuals, couples and families experiencing personal and social challenges.\n\nWe met their needs by creating a clean & modern website where they can effectively communicate their therapeutic concept and how their therapy works. Custom functionality includes the ability for patients to apply for & complete the relevant consent documentation online, as well as provide feedback for their sessions at the clinic.",
     "imgPath": "projects/development/Gemma-Institute",
     "home": true,
-    "visible": false
+    "visible": true
 }, {
     "name": "PR Engineering",
     "type": "Development",
@@ -93,7 +93,7 @@
     "description": "Reset Capital (RC) is an investment firm with a unique focus on investment opportunities in BEE companies. \n\nTheir site features content regarding their funding principles and investment focus, presented in a clean and minimalistic fashion.",
     "imgPath": "projects/development/Reset-Capital",
     "design": true,
-    "visible": false
+    "visible": true
 }, {
     "name": "NC Chemicals",
     "type": "Development",
@@ -116,7 +116,7 @@
     "tools": "HTML,CSS,Javascript,JQuery",
     "description": "Craft Consulting is a Cape Town based Civil & Structural Engineering firm. \n\nThey needed a minimalist & clean website to showcase their services & previous projects. They struggled with establishing a good design with the DIY website builder Wix and required professional help with their website's redesign. \n\nThey requested to keep the dark & moody theme, but with a complete design overhaul & updated content to match their current brand image. ",
     "imgPath": "projects/development/Craft-Consulting",
-    "visible": false
+    "visible": true
 }, {
     "name": "The Mish Dish",
     "type": "Development",
