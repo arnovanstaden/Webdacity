@@ -25,7 +25,7 @@ exports.createPages = ({ actions }) => {
             component: PageTemplate,
             context: {
                 project,
-                imgPath: project.imgPath
+                imgPath: `images/projects/${project.type}/${projectName}`
             }
         })
     })

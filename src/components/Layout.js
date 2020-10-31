@@ -13,7 +13,7 @@ import Landing from "./Landing";
 import "typeface-nunito";
 import "typeface-nunito-sans";
 import "../styles/global.scss";
-import "../styles/fonts/icons/icons.css";
+import "../assets/fonts/icons/icons.css";
 
 // Icons
 

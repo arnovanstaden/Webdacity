@@ -14,16 +14,17 @@ import LogoMark from "../assets/images/icons/content-block.svg";
 const PageTemplate = ({ pageContext, data }) => {
 
     const project = pageContext.project;
+    console.log(data)
 
-    const getImage = (name) => {
-        let edges = data.allFile.edges;
+    const getImage = (name, alias) => {
+        let edges = data[alias].edges;
         const item = edges.find(item => item.node.name === name);
         if (item) {
             return item.node.childImageSharp.fluid
         }
     }
 
-    const landingImage = getImage("landing");
+    const landingImage = getImage("landing", "landingImage");
 
 
     // Components
@@ -54,11 +55,23 @@ const PageTemplate = ({ pageContext, data }) => {
         )
     }
 
+    // Project Images
+    const ProjectImages = () => {
+        let edges = data.projectImages.edges;
+        let projectImages = []
+
+        for (let i = 1; i <= (edges.length - 1); i++) {
+            projectImages.push(<Img fluid={getImage(`${i}`, "projectImages")} key={i} />)
+        }
+
+        return projectImages
+    }
+
     return (
         <Layout
             pageMeta={{
                 title: "Webdacity Studio | Design & Development",
-                description: "Webdacity is a Design & Development Studio based in Cape Town",
+                description: "Webdacity is a Design & Development Studio based in Cape Town.",
                 canonical: "/"
             }}
             landingBig={project.name}
@@ -102,9 +115,9 @@ const PageTemplate = ({ pageContext, data }) => {
             </Section>
 
             <section
-                classNameProp="section-gallery"
+                className="section-gallery"
             >
-                <Img fluid={getImage("1")} />
+                <ProjectImages />
             </section>
 
         </Layout>
@@ -115,13 +128,31 @@ export default PageTemplate
 
 export const query = graphql`
 query projectImages($imgPath: String) {
-    allFile(filter: {ext: {regex: "/(jpg)/"}, relativeDirectory: {eq: $imgPath}}) {
+      landingImage: allFile(filter: {ext: {regex: "/(jpg)/"}, relativeDirectory: {eq: $imgPath}, name: {eq: "landing"}}) {
         edges {
           node {
             base
             name
             childImageSharp {
-                fluid(maxWidth: 1920, quality: 100) {
+              fluid(maxWidth: 1000, quality: 80) {
+                aspectRatio
+                base64
+                sizes
+                src
+                srcSet
+                srcWebp
+              }
+            }
+          }
+        }
+      }
+      projectImages: allFile(filter: {ext: {regex: "/(jpg)|(png)/"},relativeDirectory: {eq: $imgPath}}) {
+        edges {
+          node {
+            base
+            name
+            childImageSharp {
+              fluid(maxWidth: 1920, quality: 85) {
                 aspectRatio
                 base64
                 sizes

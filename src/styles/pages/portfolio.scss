@@ -1,0 +1,46 @@
+@import "../global.scss";
+
+.portfolio {
+    .section-projects {
+        &__grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-bottom: 4rem;
+            row-gap: 1rem;
+
+            .project-block {
+                width: 40%;
+
+                @media (max-width: 991px) {
+                    width: 45%;
+                }
+
+                @media (max-width: 768px) {
+                    width: 80%;
+                    margin: 0 !important;
+                }
+
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+
+            .project-block:nth-child(even) {
+                margin-top: 3rem;
+            }
+
+            .project-block:nth-child(odd) {
+                margin-bottom: 3rem;
+            }
+
+            .project-block:last-child {
+                justify-self: flex-start;
+            }
+
+            @media (max-width: 768px) {
+                row-gap: 3rem;
+            }
+        }
+    }
+}

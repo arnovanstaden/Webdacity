@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import ContentBlock from "../components/ContentBlock";
+import ProjectBlock from "../components/ProjectBlock"
 
 // Vendors
 import FeedbackSlick from "../components/FeedbackSlick"
@@ -14,8 +15,20 @@ import FeedbackSlick from "../components/FeedbackSlick"
 // Styles, Fonts, Images
 import "../styles/pages/index.scss";
 
+// Data
+import ProjectData from "../assets/data/projects-development.json"
+
 
 const Home = ({ data }) => {
+  const getThumbnail = (projectName) => {
+    let edges = data.projectThumbnails.edges;
+    let folderName = projectName.replace(/ /g, "-");
+    const item = edges.find(item => item.node.relativeDirectory.includes(folderName));
+    if (item) {
+      return item.node.childImageSharp.fluid
+    }
+  }
+
   return (
     <Layout
       pageMeta={{
@@ -38,9 +51,19 @@ const Home = ({ data }) => {
 
       <Section
         headingBig="Projects"
-        headingSmall="Our work speaks for itself. Here’s some of our featured projects."
+        headingSmall="Our work speaks for itself. Here are some of our featured projects."
+        classNameProp="section-projects"
       >
-
+        <div className="section-projects__grid">
+          {ProjectData.map(project => (
+            project.home ? <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project.name)} /> : null
+          ))}
+        </div>
+        <button className="button button--centered">
+          <Link to="/portfolio">
+            View All Projects
+          </Link>
+        </button>
       </Section>
 
       <Section
@@ -144,6 +167,25 @@ query ClientLogoImagesQuery {
             srcSet
             ...GatsbyImageSharpFluid
             ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  }
+  projectThumbnails: allFile(filter: {ext: {regex: "/(jpg)/"}, absolutePath: {regex: "/images/projects/"}, name: {regex: "/landing/"}}) {
+    edges {
+      node {
+        base
+        name
+        relativeDirectory
+        childImageSharp {
+          fluid(maxWidth: 600, quality: 90) {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+            srcWebp
           }
         }
       }

@@ -1,56 +1,105 @@
 [{
         "name": "LesleyD Training",
         "type": "Design",
-        "services": "Branding Identity",
+        "services": "Brand Identity",
         "date": "July 2020",
         "industry": "Training",
         "elements": "Logo, Business Cards, Email Signatures",
         "description": "LesleyD specialises in corporate training & teaching mindfulness practices to employees at large corporates. The colour psychology of blue symbolises calm, confidence & trust; whilst her broad range of services needed a logomark that represents them all.",
-        "imgPath": "projects/design/LesleyD-Training"
+        "imgPath": "projects/design/LesleyD-Training",
+        "visible": false
     },
     {
         "name": "Asante2gether",
         "type": "Design",
-        "services": "Branding Identity",
+        "services": "Brand Identity",
         "date": "September 2020",
         "industry": "Skills Development",
         "elements": "Logo, Business Cards, Email Signatures, Company Profile",
         "description": "Asante2gether assists local communities to generate income, to find their purpose, and to enable self-sufficiency. \n\n We created a friendly and clean brand identity for Asante2gether that portrays their journey in assisting with skills-development to help people move from poverty to prosperity.",
-        "imgPath": "projects/design/Asante2gether"
-
+        "imgPath": "projects/design/Asante2gether",
+        "visible": false
     },
     {
+        "name": "HundredFold",
+        "type": "Design",
+        "services": "Brand Identity",
+        "date": "September 2020",
+        "industry": "Engineering",
+        "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
+        "description": "Hundredfold is an African focus strategy company that prides itself in international networks and global collaborations. \n\nThey were in need of a sleek & modern brand identity with a dark/moody feel.",
+        "development": true,
+        "imgPath": "projects/design/PR-Engineering",
+        "visible": false
+    }, {
         "name": "Reset Capital",
         "type": "Design",
-        "services": "Branding Identity",
+        "services": "Brand Identity",
         "date": "June 2019",
         "industry": "Finance | Business",
         "elements": "Logo, Business Cards, Email Signatures",
         "description": "Reset Capital (RC) is an investment firm based in Johannesburg with a unique focus on investment opportunities in BEE companies. \n The design elements include Logos, Business Cards, Email Signatures, Letterheads & Presentation Design.",
         "development": true,
-        "imgPath": "projects/design/LesleyD-Training"
-
+        "imgPath": "projects/design/LesleyD-Training",
+        "visible": false
     },
     {
         "name": "Together Trough Skills",
         "type": "Design",
-        "services": "Branding Identity",
+        "services": "Brand Identity",
         "date": "August 2020",
         "industry": "Skills Development",
         "elements": "Logo, Business Cards, Email Signatures, Company Profile",
         "description": "",
-        "imgPath": "projects/design/Together-Trough-Skills"
-
+        "imgPath": "projects/design/Together-Trough-Skills",
+        "visible": false
     },
     {
         "name": "PR Engineering",
         "type": "Design",
-        "services": "Branding Identity",
+        "services": "Brand Identity",
         "date": "March 2019",
         "industry": "Engineering",
         "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
-        "description": "",
+        "description": "PR Engineering is a consulting engineering firm providing comprehensive and value-driven design and project management services. \n They were in need of a Brand Identity reflecting that was modern & clean, and is reflective of their services in a subtle way throughout their brand.",
         "development": true,
-        "imgPath": "projects/design/PR-Engineering"
+        "imgPath": "projects/design/PR-Engineering",
+        "visible": false
+    },
+    {
+        "name": "Oosthuizens Attorneys",
+        "type": "Design",
+        "services": "Brand Identity",
+        "date": "November 2018",
+        "industry": "Legal",
+        "elements": "Logo, Business Cards, Email Signatures",
+        "description": "Oosthuizens Attorneys is a boutique law firm based south of Johannesburg. They needed a complete brand revitalization.",
+        "development": true,
+        "imgPath": "projects/design/PR-Engineering",
+        "visible": false
+    },
+    {
+        "name": "CCPT",
+        "type": "Design",
+        "services": "Brand Identity",
+        "date": "February 2020",
+        "industry": "Engineering",
+        "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
+        "description": "Cape Control Panel Technology (CCPT) is an engineering firm that builds specialised power and control panels. \n They were a new startup and needed a fresh and modern brand.",
+        "development": true,
+        "imgPath": "projects/design/PR-Engineering",
+        "visible": false
+    },
+    {
+        "name": "NC Chemicals",
+        "type": "Design",
+        "services": "Brand Identity",
+        "date": "March 2020",
+        "industry": "Engineering",
+        "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
+        "description": "NC Chemicals is a manufacturer and distributor of cleaning chemicals for the car wash and industrial industry.",
+        "development": true,
+        "imgPath": "projects/design/PR-Engineering",
+        "visible": false
     }
 ]
