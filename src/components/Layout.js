@@ -1,7 +1,7 @@
 import React from "react";
 
 // Gatsby, Plugins etc
-import TransitionLink from "gatsby-plugin-transition-link"
+import TransitionLink from "gatsby-plugin-transition-link";
 
 // Components
 import Header from "./Header";

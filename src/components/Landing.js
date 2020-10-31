@@ -42,7 +42,7 @@ const Landing = (props) => {
                         <h1>{props.landingBig}</h1>
                     </div>
                     <div className="landing__inner__image">
-                        <Img fluid={props.landingImage} style={{ width: "100%" }} />
+                        <Img fluid={props.landingImage} style={{ width: "100%", borderRadius: "1rem" }} />
                     </div>
                 </div >
             </>
