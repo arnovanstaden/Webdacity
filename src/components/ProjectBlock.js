@@ -5,7 +5,6 @@ import { Link, navigate } from "gatsby"
 
 // Styles, Fonts, Images
 import "../styles/components/project-block.scss";
-import image from "../assets/images/projects/development/Hundredfold/landing.jpg"
 
 const ProjectBlock = (props) => {
     const project = props.project;
