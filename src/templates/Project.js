@@ -14,7 +14,7 @@ import LogoMark from "../assets/images/icons/content-block.svg";
 const PageTemplate = ({ pageContext, data }) => {
 
     const project = pageContext.project;
-    console.log(data)
+    console.log(pageContext.imgPath)
 
     const getImage = (name, alias) => {
         let edges = data[alias].edges;
@@ -58,6 +58,7 @@ const PageTemplate = ({ pageContext, data }) => {
     // Project Images
     const ProjectImages = () => {
         let edges = data.projectImages.edges;
+        console.log(edges)
         let projectImages = []
 
         for (let i = 1; i <= (edges.length - 1); i++) {
@@ -146,7 +147,7 @@ query projectImages($imgPath: String) {
           }
         }
       }
-      projectImages: allFile(filter: {ext: {regex: "/(jpg)|(png)/"},relativeDirectory: {eq: $imgPath}}) {
+      projectImages: allFile(filter: {ext: {regex: "/(jpg)/"},relativeDirectory: {eq: $imgPath}}) {
         edges {
           node {
             base

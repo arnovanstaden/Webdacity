@@ -51,16 +51,18 @@ const Header = () => {
                     <img src={NavbarLogo} alt="Webdacity Navbar Logo" />
                 </Link>
                 <div className="navbar__list">
-                    <Link to="/about" className="navbar__list__item">
+                    <Link to="/about" className="navbar__list__item" activeClassName="navbar__list__item--active">
                         About
                         </Link>
-                    <Link to="/services" className="navbar__list__item">
+                    <Link to="/services" className="navbar__list__item" activeClassName="navbar__list__item--active">
                         Services
                         </Link>
-                    <Link to="/portfolio" className="navbar__list__item">
+                    <Link to="/portfolio" className="navbar__list__item"
+                        activeClassName="navbar__list__item--active">
                         Portfolio
                         </Link>
-                    <Link to="/contact" className="navbar__list__item">
+                    <Link to="/contact" className="navbar__list__item"
+                        activeClassName="navbar__list__item--active">
                         Contact
                         </Link>
                 </div>

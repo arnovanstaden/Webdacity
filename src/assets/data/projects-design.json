@@ -6,8 +6,7 @@
         "industry": "Training",
         "elements": "Logo, Business Cards, Email Signatures",
         "description": "LesleyD specialises in corporate training & teaching mindfulness practices to employees at large corporates. The colour psychology of blue symbolises calm, confidence & trust; whilst her broad range of services needed a logomark that represents them all.",
-        "imgPath": "projects/design/LesleyD-Training",
-        "visible": false
+        "visible": true
     },
     {
         "name": "Asante2gether",
@@ -17,8 +16,7 @@
         "industry": "Skills Development",
         "elements": "Logo, Business Cards, Email Signatures, Company Profile",
         "description": "Asante2gether assists local communities to generate income, to find their purpose, and to enable self-sufficiency. \n\n We created a friendly and clean brand identity for Asante2gether that portrays their journey in assisting with skills-development to help people move from poverty to prosperity.",
-        "imgPath": "projects/design/Asante2gether",
-        "visible": false
+        "visible": true
     },
     {
         "name": "HundredFold",
@@ -29,7 +27,6 @@
         "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
         "description": "Hundredfold is an African focus strategy company that prides itself in international networks and global collaborations. \n\nThey were in need of a sleek & modern brand identity with a dark/moody feel.",
         "development": true,
-        "imgPath": "projects/design/PR-Engineering",
         "visible": false
     }, {
         "name": "Reset Capital",
@@ -40,8 +37,7 @@
         "elements": "Logo, Business Cards, Email Signatures",
         "description": "Reset Capital (RC) is an investment firm based in Johannesburg with a unique focus on investment opportunities in BEE companies. \n The design elements include Logos, Business Cards, Email Signatures, Letterheads & Presentation Design.",
         "development": true,
-        "imgPath": "projects/design/LesleyD-Training",
-        "visible": false
+        "visible": true
     },
     {
         "name": "Together Trough Skills",
@@ -51,7 +47,6 @@
         "industry": "Skills Development",
         "elements": "Logo, Business Cards, Email Signatures, Company Profile",
         "description": "",
-        "imgPath": "projects/design/Together-Trough-Skills",
         "visible": false
     },
     {
@@ -63,7 +58,6 @@
         "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
         "description": "PR Engineering is a consulting engineering firm providing comprehensive and value-driven design and project management services. \n They were in need of a Brand Identity reflecting that was modern & clean, and is reflective of their services in a subtle way throughout their brand.",
         "development": true,
-        "imgPath": "projects/design/PR-Engineering",
         "visible": false
     },
     {
@@ -75,7 +69,6 @@
         "elements": "Logo, Business Cards, Email Signatures",
         "description": "Oosthuizens Attorneys is a boutique law firm based south of Johannesburg. They needed a complete brand revitalization.",
         "development": true,
-        "imgPath": "projects/design/PR-Engineering",
         "visible": false
     },
     {
@@ -87,7 +80,6 @@
         "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
         "description": "Cape Control Panel Technology (CCPT) is an engineering firm that builds specialised power and control panels. \n They were a new startup and needed a fresh and modern brand.",
         "development": true,
-        "imgPath": "projects/design/PR-Engineering",
         "visible": false
     },
     {
@@ -99,7 +91,6 @@
         "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
         "description": "NC Chemicals is a manufacturer and distributor of cleaning chemicals for the car wash and industrial industry.",
         "development": true,
-        "imgPath": "projects/design/PR-Engineering",
         "visible": false
     }
 ]

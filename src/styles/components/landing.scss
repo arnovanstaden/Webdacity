@@ -67,6 +67,16 @@
             &__image {
                 width: 50%;
                 margin-top: -3rem;
+
+                @media (max-width: 991px) {
+                    width: 65%;
+                    margin-top: 0;
+                }
+
+                @media (max-width: 768px) {
+                    width: 80%;
+                    margin-top: 1rem;
+                }
             }
         }
     }

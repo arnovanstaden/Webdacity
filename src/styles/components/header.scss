@@ -34,35 +34,45 @@
             color: $lightgrey;
             font-weight: 600;
             letter-spacing: 0.5px;
-        }
 
-        &__item:hover {
-            color: $white;
-            transition: 0.2s ease-out;
-            -webkit-transition: 0.2s ease-out;
-            -moz-transition: 0.2s ease-out;
-            -ms-transition: 0.2s ease-out;
-            -o-transition: 0.2s ease-out;
-        }
+            &:hover {
+                color: $white;
+                transition: 0.2s ease-out;
+                -webkit-transition: 0.2s ease-out;
+                -moz-transition: 0.2s ease-out;
+                -ms-transition: 0.2s ease-out;
+                -o-transition: 0.2s ease-out;
+            }
 
-        &__item:after {
-            content: "";
-            display: block;
-            margin: auto;
-            margin-top: 2px;
-            height: 2px;
-            width: 0px;
-            background: transparent;
-            transition: width 0.2s ease-out, background-color 0.3s ease;
-            -webkit-transition: width 0.2s ease-out, background-color 0.3s ease;
-            -moz-transition: width 0.2s ease-out, background-color 0.3s ease;
-            -ms-transition: width 0.2s ease-out, background-color 0.3s ease;
-            -o-transition: width 0.2s ease-out, background-color 0.3s ease;
-        }
+            &:after {
+                content: "";
+                display: block;
+                margin: auto;
+                margin-top: 2px;
+                height: 2px;
+                width: 0px;
+                background: transparent;
+                transition: width 0.2s ease-out, background-color 0.3s ease;
+                -webkit-transition: width 0.2s ease-out, background-color 0.3s ease;
+                -moz-transition: width 0.2s ease-out, background-color 0.3s ease;
+                -ms-transition: width 0.2s ease-out, background-color 0.3s ease;
+                -o-transition: width 0.2s ease-out, background-color 0.3s ease;
+            }
 
-        &__item:hover:after {
-            width: 100%;
-            background: $blue;
+            &:hover:after {
+                width: 100%;
+                background: $blue;
+            }
+
+            &--active {
+                // color: $white;
+
+                &:after {
+                    transition: 0.3s ease-out;
+                    width: 40%;
+                    background: $blue;
+                }
+            }
         }
     }
 

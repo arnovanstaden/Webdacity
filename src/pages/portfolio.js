@@ -23,10 +23,11 @@ const Portfolio = ({ data }) => {
         return project.visible
     });
 
-    const getThumbnail = (projectName) => {
-        let edges = data.projectThumbnails.edges;
-        let folderName = projectName.replace(/ /g, "-");
-        const item = edges.find(item => item.node.relativeDirectory.includes(folderName));
+    const getThumbnail = (project) => {
+        const edges = data.projectThumbnails.edges;
+        const folderName = project.name.replace(/ /g, "-");
+        const projectType = project.type.toLowerCase();
+        const item = edges.find(item => item.node.relativeDirectory.includes(`${projectType}/${folderName}`));
         if (item) {
             return item.node.childImageSharp.fluid
         }
@@ -55,7 +56,7 @@ const Portfolio = ({ data }) => {
             >
                 <div className="section-projects__grid">
                     {devProjects.map(project => (
-                        <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project.name)} />
+                        <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
                     ))}
                 </div>
             </Section>
@@ -75,7 +76,7 @@ const Portfolio = ({ data }) => {
             >
                 <div className="section-projects__grid">
                     {desProjects.map(project => (
-                        <ProjectBlock key={project.name} project={project} />
+                        <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
                     ))}
                 </div>
             </Section>

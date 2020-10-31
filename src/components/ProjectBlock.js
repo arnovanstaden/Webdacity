@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from "gatsby-image";
-import { Link, navigate } from "gatsby"
+import { Link } from "gatsby"
 
 
 // Styles, Fonts, Images
@@ -8,7 +8,12 @@ import "../styles/components/project-block.scss";
 
 const ProjectBlock = (props) => {
     const project = props.project;
-    const link = "/portfolio/" + project.name.replace(/ /g, "");
+    let link = "";
+    if (project.type === "Design") {
+        link = "/portfolio/design/" + project.name.replace(/ /g, "");
+    } else {
+        link = "/portfolio/" + project.name.replace(/ /g, "");
+    }
 
     return (
         // <div className="project-block" onClick={goToProject}>

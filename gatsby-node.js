@@ -8,24 +8,28 @@ exports.createPages = ({ actions }) => {
 
     developmentProjects.forEach(project => {
         const projectName = project.name.replace(/ /g, "");
+        const folderName = project.name.replace(/ /g, "-");
+        const projectType = project.type.toLowerCase();
         createPage({
             path: `/portfolio/${projectName}`,
             component: PageTemplate,
             context: {
                 project,
-                imgPath: project.imgPath
+                imgPath: `projects/${projectType}/${folderName}`
             }
         })
     });
 
     designProjects.forEach(project => {
         const projectName = project.name.replace(/ /g, "");
+        const folderName = project.name.replace(/ /g, "-");
+        const projectType = project.type.toLowerCase();
         createPage({
             path: `/portfolio/design/${projectName}`,
             component: PageTemplate,
             context: {
                 project,
-                imgPath: `images/projects/${project.type}/${projectName}`
+                imgPath: `projects/${projectType}/${folderName}`
             }
         })
     })
