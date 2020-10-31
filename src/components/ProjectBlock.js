@@ -10,16 +10,12 @@ const ProjectBlock = (props) => {
     const project = props.project;
     const link = "/portfolio/" + project.name.replace(/ /g, "");
 
-    if (props.thumbnail) {
-        console.log(props.thumbnail)
-    }
-
     return (
         // <div className="project-block" onClick={goToProject}>
         <Link className="project-block" to={link}>
             <div>
                 <div className="project-block__image">
-                    <Img fluid={props.thumbnail} />
+                    <Img fluid={props.thumbnail} style={{ width: "100%" }} />
                 </div>
                 <div className="project-block__heading">
                     <h3>{project.name}</h3>
