@@ -108,6 +108,8 @@ query ProjectThumbnailsQuery {
                   src
                   srcSet
                   srcWebp
+                  ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

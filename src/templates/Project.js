@@ -146,6 +146,8 @@ query projectImages($imgPath: String) {
                 src
                 srcSet
                 srcWebp
+                ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

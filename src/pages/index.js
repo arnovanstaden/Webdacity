@@ -186,6 +186,8 @@ query ClientLogoImagesQuery {
             src
             srcSet
             srcWebp
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

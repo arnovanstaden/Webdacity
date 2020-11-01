@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { useStaticQuery, graphql } from "gatsby"
 
 // Components
 import FeedbackBlock from "../components/FeedbackBlock";

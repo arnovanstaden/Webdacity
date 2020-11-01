@@ -18,7 +18,7 @@ const Terms = () => {
             }}
             landingTitle={
                 <h3>
-                    It's always important to establish some <span>ground rules</span> <br /> to enable a working healthy relationship.
+                    It's always important to establish <br/> some healthy <span>ground rules</span>.
                 </h3>}
             landingBig={<h1>T's and  <br /> the C's</h1>}
             classNameProp="services"
