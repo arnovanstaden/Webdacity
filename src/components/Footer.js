@@ -57,7 +57,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer__copy">
-                <p><Link to="terms">Terms of Service</Link></p>
+                <p><Link to="/terms">Terms of Service</Link></p>
                 <span>|</span>
                 <p> © 2020 - Webdacity (PTY) LTD.</p>
             </div>
