@@ -117,10 +117,16 @@
                 margin: 0.2rem 0;
                 color: $lightgrey;
                 text-decoration: none;
+                transition: 0.3s ease-out;
             }
 
             p {
                 font-size: 1rem;
+            }
+
+            a:hover {
+                padding-left: 0.25rem;
+                color: $blue;
             }
         }
 
