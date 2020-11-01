@@ -9,7 +9,9 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer">
-                <img src={FooterLogo} alt="Webdacity Footer Logo" />
+                <Link to="/">
+                    <img src={FooterLogo} alt="Webdacity Footer Logo" />
+                </Link>
                 <div className="footer__menu">
                     <Link to="/about" className="footer__menu__item">
                         About

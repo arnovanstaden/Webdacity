@@ -31,6 +31,9 @@
             -moz-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             -o-transform: translate(-50%, -50%);
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
         }
 
         h3 {
@@ -61,21 +64,42 @@
                     white-space: nowrap;
                     position: unset;
                     transform: none;
+                    // display: none;
                 }
             }
 
             &__image {
-                width: 50%;
-                margin-top: -3rem;
+                width: 45%;
+                margin-top: 2rem;
+                // margin-bottom: 2rem;
 
                 @media (max-width: 991px) {
-                    width: 65%;
-                    margin-top: 0;
+                    width: 60%;
+                    // margin-top: 0;
                 }
 
                 @media (max-width: 768px) {
-                    width: 80%;
+                    width: 75%;
                     margin-top: 1rem;
+                }
+
+                @media (max-width: 576px) {
+                    width: 90%;
+                    margin-top: 1rem;
+                }
+            }
+
+            &--project {
+                h3 {
+                    margin: 3.5rem 0 0.5rem 0;
+                    font-weight: 600;
+                }
+                h4 {
+                    color: $blue;
+                    margin: 0;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    position: relative;
                 }
             }
         }
@@ -88,15 +112,15 @@
     @media (max-width: 991px) {
         &__inner {
             h1 {
-                font-size: 7rem;
+                font-size: 8rem;
             }
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
         &__inner {
             h1 {
-                font-size: 5rem;
+                font-size: 8rem;
             }
         }
     }
@@ -104,7 +128,7 @@
     @media (max-width: 576px) {
         &__inner {
             h1 {
-                font-size: 4rem;
+                font-size: 6rem;
             }
         }
     }

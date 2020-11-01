@@ -7,6 +7,7 @@
         .section__heading {
             padding: 0;
         }
+
         .grid {
             display: flex;
             justify-content: space-between;
@@ -125,6 +126,11 @@
                     &__links {
                         align-items: center;
                         row-gap: 1.5rem;
+                        justify-content: center;
+
+                        button:first-child {
+                            margin-right: 0;
+                        }
                     }
                 }
 
@@ -132,6 +138,12 @@
                     width: 100%;
                 }
             }
+        }
+    }
+
+    .section-gallery {
+        .section__heading {
+            padding: 0;
         }
     }
 }

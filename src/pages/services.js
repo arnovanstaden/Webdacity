@@ -62,7 +62,7 @@ const Services = () => {
             <Section
                 light={true}
                 headingBig="Tech Stack"
-                headingSmall="Every project is a new story, yet some things stay the same. \n These are some of the tools we use during our design &amp; development process. "
+                headingSmall="Every project is a new story, yet some things stay the same. These are some of the tools we use during our design &amp; development process. "
                 classNameProp="section-stack"
             >
                 <div className="section-stack__grid">

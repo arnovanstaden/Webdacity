@@ -24,9 +24,6 @@ const PageTemplate = ({ pageContext, data }) => {
         }
     }
 
-    const landingImage = getImage("landing", "landingImage");
-
-
     // Components
 
     const WebsiteLink = () => {
@@ -59,11 +56,16 @@ const PageTemplate = ({ pageContext, data }) => {
     const ProjectImages = () => {
         let edges = data.projectImages.edges;
         console.log(edges)
-        let projectImages = []
+        let projectImages = [];
+
+        projectImages.push(<Img fluid={getImage(`landing`, "projectImages")} key="landing" style={{ width: "100%", marginBottom: "2rem" }} />)
 
         for (let i = 1; i <= (edges.length - 1); i++) {
-            projectImages.push(<Img fluid={getImage(`${i}`, "projectImages")} key={i} style={{ width: "100%" }} />)
+            projectImages.push(<Img fluid={getImage(`${i}`, "projectImages")} key={i} style={{ width: "100%", marginBottom: "2rem" }} />)
         }
+
+
+
 
         return projectImages
     }
@@ -75,9 +77,8 @@ const PageTemplate = ({ pageContext, data }) => {
                 description: "Webdacity is a Design & Development Studio based in Cape Town.",
                 canonical: "/"
             }}
-            landingBig={project.name}
+            project={project}
             classNameProp="project"
-            landingImage={landingImage}
         >
 
             <Section
@@ -115,11 +116,14 @@ const PageTemplate = ({ pageContext, data }) => {
                 </div>
             </Section>
 
-            <section
-                className="section-gallery"
+            <Section
+                classNameProp="section-gallery"
+                skew={false}
+
             >
                 <ProjectImages />
-            </section>
+
+            </Section>
 
         </Layout>
     )
@@ -129,24 +133,6 @@ export default PageTemplate
 
 export const query = graphql`
 query projectImages($imgPath: String) {
-      landingImage: allFile(filter: {ext: {regex: "/(jpg)/"}, relativeDirectory: {eq: $imgPath}, name: {eq: "landing"}}) {
-        edges {
-          node {
-            base
-            name
-            childImageSharp {
-              fluid(maxWidth: 1000, quality: 80) {
-                aspectRatio
-                base64
-                sizes
-                src
-                srcSet
-                srcWebp
-              }
-            }
-          }
-        }
-      }
       projectImages: allFile(filter: {ext: {regex: "/(jpg)/"},relativeDirectory: {eq: $imgPath}}) {
         edges {
           node {

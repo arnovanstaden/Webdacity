@@ -44,6 +44,7 @@
 
             @media (max-width: 768px) {
                 flex-direction: column;
+                padding-top: 0;
 
                 .text--left,
                 .text--right {
@@ -108,6 +109,14 @@
                     width: 100%;
                 }
             }
+
+            @media (max-width: 768px) {
+                padding-top: 1rem;
+            }
+
+            @media (max-width: 576px) {
+                padding-top: 0rem;
+            }
         }
     }
 
@@ -156,6 +165,7 @@
             @media (max-width: 768px) {
                 flex-direction: column-reverse;
                 align-items: center;
+                padding-top: 1rem;
 
                 .grid__image {
                     width: 75%;
@@ -169,6 +179,8 @@
             }
 
             @media (max-width: 576px) {
+                padding-top: 0rem;
+
                 .grid__image {
                     width: 100%;
                     margin-top: 2rem;

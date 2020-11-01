@@ -97,7 +97,7 @@ const Home = ({ data }) => {
               We specialize in building premium bespoke websites &amp; web applications with light-speed performance, custom design &amp; any unique functionality needed to provide your business with an edge.
               </p>
             <button className="button">
-              <Link to="/portfolio">
+              <Link to="/portfolio#development">
                 View our Development Work
                 </Link>
             </button>
@@ -110,7 +110,7 @@ const Home = ({ data }) => {
               We're a design partner for branding and digital experiences. We design everything from corporate branding &amp; identity, motion graphics &amp; basic video editing and custom graphic design.
               </p>
             <button className="button">
-              <Link to="/portfolio">
+              <Link to="/portfolio#design">
                 View our Design Work
                 </Link>
             </button>

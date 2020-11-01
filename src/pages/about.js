@@ -36,6 +36,7 @@ const About = ({ data }) => {
 
             <Section
                 classNameProp="about__section-story"
+                sectionSimple={true}
             >
                 <div className="about__section-story__grid">
                     <div className="text--left">
@@ -64,6 +65,9 @@ const About = ({ data }) => {
             <Section
                 light={true}
                 classNameProp="about__section-services"
+                container={false}
+                sectionSimple={true}
+
             >
                 <ServiceTicker />
 
@@ -90,6 +94,7 @@ const About = ({ data }) => {
             <Section
                 light={true}
                 classNameProp="about__section-stats"
+                sectionSimple={true}
             >
                 <div className="about__section-stats__grid">
                     <div className="stat">
@@ -110,6 +115,7 @@ const About = ({ data }) => {
 
             <Section
                 classNameProp="about__section-founder"
+                sectionSimple={true}
             >
                 <div className="about__section-founder__grid">
                     <div className="grid__image">

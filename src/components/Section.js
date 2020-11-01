@@ -32,16 +32,22 @@ const Section = (props) => {
     var sectionClass = classNames({
         "section": true,
         'section--light': props.light,
-        'section--simple': props.sectionSimple
+        'section--simple': props.sectionSimple,
     }, props.classNameProp);
 
     return (
-        <section className={sectionClass}>
+        <section className={sectionClass} id={props.idProp}>
             {props.skew === false ? null : <SectionSkew light={props.light} />}
-            <div className="container">
-                <SectionHeading headingBig={props.headingBig} headingSmall={props.headingSmall} />
-                {props.children}
-            </div>
+            {props.container === false ?
+                <>
+                    <SectionHeading headingBig={props.headingBig} headingSmall={props.headingSmall} />
+                    {props.children}
+                </>
+                :
+                <div className="container">
+                    <SectionHeading headingBig={props.headingBig} headingSmall={props.headingSmall} />
+                    {props.children}
+                </div>}
         </section>
     )
 }

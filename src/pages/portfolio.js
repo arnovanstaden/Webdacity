@@ -42,7 +42,7 @@ const Portfolio = ({ data }) => {
             }}
             landingTitle={
                 <h3>
-                    We <span>design</span> branding identities <br />
+                    We <span>design</span> brand identities <br />
                     and <span>develop</span> fast &amp; beautiful websites.
                   </h3>}
             landingBig={<h1>Featured <br /> Projects</h1>}
@@ -53,6 +53,7 @@ const Portfolio = ({ data }) => {
                 headingBig="Development Projects"
                 headingSmall="Our work speaks for itself. Here are some of our featured web development projects."
                 classNameProp="section-projects"
+                idProp="development"
             >
                 <div className="section-projects__grid">
                     {devProjects.map(project => (
@@ -64,6 +65,9 @@ const Portfolio = ({ data }) => {
             <Section
                 light={true}
                 classNameProp="about__section-services"
+                container={false}
+                sectionSimple={true}
+
             >
                 <ServiceTicker />
 
@@ -73,6 +77,7 @@ const Portfolio = ({ data }) => {
                 headingBig="Design Projects"
                 headingSmall="Our work speaks for itself. Here are some of our featured web design projects."
                 classNameProp="section-projects"
+                idProp="design"
             >
                 <div className="section-projects__grid">
                     {desProjects.map(project => (

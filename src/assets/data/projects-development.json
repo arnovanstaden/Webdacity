@@ -7,7 +7,7 @@
     "industry": "Legal",
     "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
     "description": "Oosthuizens Attorneys requested a minimalist site where potential clients can reach them,learn more about their history and the legal services they offer, and also get in touch with them regarding legal advice.",
-    "design": true,
+    "design": false,
     "home": true,
     "visible": true
 }, {
@@ -30,7 +30,7 @@
     "date": "May 2020",
     "industry": "Medical",
     "tools": "HTML,CSS,Javascript,JQuery,Bootstrap,ExpressJS,NodeJS",
-    "description": "The GEMMA Institute is a Psychotherapy Clinic based in Frankfurt, Germany. They assist individuals, couples and families experiencing personal and social challenges.\n\nWe met their needs by creating a clean & modern website where they can effectively communicate their therapeutic concept and how their therapy works. Custom functionality includes the ability for patients to apply for & complete the relevant consent documentation online, as well as provide feedback for their sessions at the clinic.",
+    "description": "The GEMMA Institute is a Psychotherapy Clinic based in Frankfurt, Germany. They assist individuals, couples and families experiencing personal and social challenges.\n\nWe met their needs by creating a clean & modern website where they can effectively communicate their therapeutic concept and how their therapy works. Custom functionality includes the ability for patients to apply for & complete the relevant consent documentation online, as well as provide feedback for their sessions at the clinic. \n\n Their website is available in both English & German.",
     "home": true,
     "visible": true
 }, {
@@ -64,7 +64,7 @@
     "industry": "Finance | Business",
     "tools": "HTML,CSS,Javascript,JQuery",
     "description": "AfricaneurIQ (AIQ) is a professional service company that delivers rapid, equitable and sustainable economic transformation through Enterprise and Supplier Development. \n\nThey had a well-crafted brand identity and required a website revamp that truly captures their existing brand image and defines what they do in a succinct and easy to digest manner. ",
-    "visible": false
+    "visible": true
 }, {
     "name": "SmartFunder",
     "type": "Development",
@@ -96,7 +96,7 @@
     "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
     "description": "NC Chemicals is a manufacturer and distributor of cleaning chemicals for the car wash and industrial industry. \n\nThey originally needed a simple online presence featuring who they are and what they do, as well as accompanying print documents to be designed showcasing their product catalogue. \n\nWe recommended integrating our e-commerce platform into their website to function as a one-stop-shop to showcase & sell their products online, from anywhere.",
     "design": true,
-    "visible": false
+    "visible": true
 }, {
     "name": "Craft Consulting",
     "type": "Development",

@@ -21,7 +21,7 @@ const MoveStuffAround = () => (
                 </div>
             )}
         </Ticker>
-        <Ticker speed={1.5} direction="toRight">
+        <Ticker speed={1.5} offset={"100%"} direction="toRight">
             {({ index }) => (
                 <div className="service__ticker__inner">
                     <div>

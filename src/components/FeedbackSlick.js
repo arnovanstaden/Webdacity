@@ -22,12 +22,12 @@ class Slick extends Component {
             slidesToShow: 2,
             slidesToScroll: 1,
             draggable: true,
-            // autoplay: true,
-            // autoplaySpeed: 5000,
+            autoplay: true,
+            autoplaySpeed: 5000,
             cssEase: "linear",
             pauseOnHover: true,
             swipeToSlide: true,
-            speed: 1000,
+            speed: 500,
             responsive: [
                 {
                     breakpoint: 768,

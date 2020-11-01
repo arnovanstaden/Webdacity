@@ -105,6 +105,16 @@
 
                 @media (max-width: 768px) {
                     width: 100%;
+                    text-align: center;
+
+                    &__heading {
+                        justify-content: center;
+                    }
+
+                    .button {
+                        float: none;
+                        margin: 1.5rem auto 0 auto;
+                    }
                 }
             }
 

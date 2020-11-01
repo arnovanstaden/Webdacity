@@ -8,7 +8,7 @@ const Landing = (props) => {
 
     let LandingClassNames = classNames({
         "landing": true,
-        "landing--project": props.landingImage
+        "landing--project": props.project
     })
 
     const LandingButton = (props) => {
@@ -36,16 +36,11 @@ const Landing = (props) => {
 
     const ProjectLanding = (props) => {
         return (
-            <>
-                <div className="landing__inner">
-                    <div className="landing__inner__name">
-                        <h1>{props.landingBig}</h1>
-                    </div>
-                    <div className="landing__inner__image">
-                        <Img fluid={props.landingImage} style={{ width: "100%", borderRadius: "1rem" }} />
-                    </div>
-                </div >
-            </>
+            <div className="landing__inner landing__inner--project">
+                <h1>{props.project.type}</h1>
+                <h3>{props.project.name}</h3>
+                <h4>{props.project.services}</h4>
+            </div >
         )
     }
     return (

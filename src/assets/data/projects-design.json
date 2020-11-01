@@ -27,7 +27,7 @@
         "elements": "Logo, Business Cards, Email Signatures, Company Profile, Custom Document Design",
         "description": "Hundredfold is an African focus strategy company that prides itself in international networks and global collaborations. \n\nThey were in need of a sleek & modern brand identity with a dark/moody feel.",
         "development": true,
-        "visible": false
+        "visible": true
     }, {
         "name": "Reset Capital",
         "type": "Design",
@@ -40,14 +40,14 @@
         "visible": true
     },
     {
-        "name": "Together Trough Skills",
+        "name": "Together Through Skills",
         "type": "Design",
         "services": "Brand Identity",
         "date": "August 2020",
         "industry": "Skills Development",
         "elements": "Logo, Business Cards, Email Signatures, Company Profile",
-        "description": "",
-        "visible": false
+        "description": "Together Through Skills (TTS) is a recruitment, training and placement company, focusing on youth employment, entrepreneurship development, rural communities and people living with disabilities.",
+        "visible": true
     },
     {
         "name": "PR Engineering",

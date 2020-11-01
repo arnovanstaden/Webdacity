@@ -44,11 +44,15 @@
                 padding: 0;
             }
         }
+
+        @media (max-width: 576px) {
+            padding-top: 0;
+        }
     }
 
     &.section--simple {
         .section__heading {
-            padding-bottom: 0;
+            padding: 0;
         }
     }
 }
