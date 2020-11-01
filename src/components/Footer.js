@@ -56,7 +56,11 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <p className="footer__copy">© 2020 - Webdacity (PTY) LTD.</p>
+            <div className="footer__copy">
+                <p><Link to="terms">Terms of Service</Link></p>
+                <span>|</span>
+                <p> © 2020 - Webdacity (PTY) LTD.</p>
+            </div>
         </footer>
     )
 }

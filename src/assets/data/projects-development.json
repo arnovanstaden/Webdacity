@@ -116,7 +116,7 @@
     "industry": "Blog",
     "tools": "HTML,CSS,Javascript,JQuery,Bootstrap,ExpressJS,NodeJS,MongoDB",
     "description": "The Mish Dish as a unique & personalised food-blog with a twist. \n\nOriginally starting off with a Weebly site, Mish realised the inherent shortcomings of a WYSIWYG website builder and requested we help her with setting up a food blog. \n\nShe required the ability to administer the recipes themselves and needed the blog to have a unique UX & UI that enticed readers to return.",
-    "visible": false
+    "visible": true
 }, {
     "name": "CCPT",
     "type": "Development",

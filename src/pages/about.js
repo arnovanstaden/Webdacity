@@ -21,7 +21,7 @@ const About = ({ data }) => {
         <Layout
             pageMeta={{
                 title: "About | Webdacity",
-                description: "About Us",
+                description: "We design and build amazing things that help you grow your business.",
                 canonical: "/about"
             }}
             landingTitle={

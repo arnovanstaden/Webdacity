@@ -34,8 +34,9 @@
                 margin-bottom: 3rem;
             }
 
-            .project-block:last-child {
-                justify-self: flex-start;
+            ::after {
+                content: "";
+                justify-content: flex-start;
             }
 
             @media (max-width: 768px) {

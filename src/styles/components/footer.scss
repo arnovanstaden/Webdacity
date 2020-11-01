@@ -116,11 +116,29 @@ footer {
     }
 
     &__copy {
-        color: $lightgrey;
-        font-weight: 300;
-        font-size: 0.7rem;
-        margin: 0.5rem;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem 0;
+        align-items: center;
+
+        p,
+        a {
+            color: $lightgrey;
+            font-weight: 300;
+            font-size: 0.7rem;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s ease-out;
+            margin: 0;
+        }
+
+        a:hover {
+            color: $blue;
+        }
+
+        span {
+            margin: 0 0.5rem;
+        }
     }
 
     @media (max-width: 576px) {

@@ -37,6 +37,10 @@
         }
     }
 
+    @media (min-width: 1200px) {
+        margin-top: 2rem;
+    }
+
     @media (max-width: 768px) {
         padding-top: 1rem;
     }

@@ -37,7 +37,7 @@ const Portfolio = ({ data }) => {
         <Layout
             pageMeta={{
                 title: "Portfolio | Webdacity",
-                description: "See our Work",
+                description: "We design brand identities and develop fast & beautiful websites.",
                 canonical: "/portfolio"
             }}
             landingTitle={
