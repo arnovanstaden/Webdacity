@@ -11,7 +11,7 @@ const Contact = () => {
         <Layout
             pageMeta={{
                 title: "Contact | Webdacity",
-                description: "Contact Us",
+                description: "We’re always interested in hearing about new projects.",
                 canonical: "/contact",
                 classNameProp: "contact"
             }}
@@ -31,11 +31,11 @@ const Contact = () => {
                     <form data-netlify="true" name="contact" method="post">
                         <input type="hidden" name="contact" value="contact" />
                         <div className="contact__form__group">
-                            <input type="text" name="Name" placeholder="Your Name"  required/>
+                            <input type="text" name="Name" placeholder="Your Name" required />
                             <label htmlFor="Name">Your Name</label>
                         </div>
                         <div className="contact__form__group">
-                            <input type="email" name="Email" placeholder="Your Email"  required/>
+                            <input type="email" name="Email" placeholder="Your Email" required />
                             <label htmlFor="Email">Your Email</label>
                         </div>
                         <div className="contact__form__group">

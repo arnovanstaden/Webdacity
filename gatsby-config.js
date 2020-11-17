@@ -6,6 +6,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -33,10 +34,21 @@ module.exports = {
         path: `${__dirname}/src/assets/data/`,
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-6BPEZ60Z1S",
+        head: true,
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 1000,
+        // Defers execution of google analytics script after page load
+        defer: true,
+      },
+    },
   ],
   siteMetadata: {
     title: "Webdacity Studio",
-    author: "Webdacity"
+    author: "Webdacity",
+    siteUrl: `https://webdacity.dev`,
   },
-
 }

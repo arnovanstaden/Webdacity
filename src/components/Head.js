@@ -7,6 +7,7 @@ const Head = ({ pageMeta }) => {
 
     return (
         <Helmet htmlAttributes={{ "lang": "en" }}>
+
             <title>{pageMeta.title}</title>
             <meta name="description" content={pageMeta.description} />
             <link rel="canonical" href={`https://webdacity.dev${pageMeta.canonical}`} />
@@ -22,7 +23,7 @@ const Head = ({ pageMeta }) => {
             <meta property="og:description" content={pageMeta.description} />
             <meta property="og:type" content="Website" />
             <meta property="og:url" content={`https://webdacity.dev${pageMeta.canonical}`} />
-            <meta property="og:image" content="https://webdacity.com/social.png" />
+            <meta property="og:image" content="https://webdacity.dev/social.png" />
             <meta property="og:image:type" content="image/png" />
             <meta property="og:image:width" content="500" />
             <meta property="og:image:height" content="500" />

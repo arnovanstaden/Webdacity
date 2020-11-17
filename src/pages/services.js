@@ -20,7 +20,7 @@ const Services = () => {
         <Layout
             pageMeta={{
                 title: "Services | Webdacity",
-                description: "Our Services",
+                description: "We merge innovative solutions with impeccable design.",
                 canonical: "/services"
             }}
             landingTitle={
