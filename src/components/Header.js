@@ -19,15 +19,15 @@ const Header = () => {
         if (!nav.classList.contains("open") && !nav.classList.contains("closed")) {
             nav.classList.add("open");
         } else if (nav.classList.contains("open")) {
-            nav.classList.remove("open");
+            // nav.classList.remove("open");
             nav.classList.add("closed");
             setTimeout(() => {
+                nav.classList.remove("open");
                 nav.classList.remove("closed");
-            }, 300);
+            }, 1300);
         } else {
             nav.classList.remove("closed");
             nav.classList.add("open");
-
         }
     }
 
@@ -40,12 +40,6 @@ const Header = () => {
         nav.classList.remove("closed");
         nav.classList.remove("open");
     }
-
-    useEffect(() => {
-        setTimeout(() => {
-            toggleNav()
-        }, 500);
-    });
 
 
     return (
@@ -81,16 +75,16 @@ const Header = () => {
             </nav>
             <nav className="mobile-nav">
                 <div className="mobile-nav__list">
-                    <Link to="/about" className="mobile-nav__list__item">
+                    <Link to="/about" className="mobile-nav__list__item" onClick={toggleNav}>
                         About
                         </Link>
-                    <Link to="/services" className="mobile-nav__list__item">
+                    <Link to="/services" className="mobile-nav__list__item" onClick={toggleNav}>
                         Services
                         </Link>
-                    <Link to="/portfolio" className="mobile-nav__list__item">
+                    <Link to="/portfolio" className="mobile-nav__list__item" onClick={toggleNav}>
                         Portfolio
                         </Link>
-                    <Link to="/contact" className="mobile-nav__list__item">
+                    <Link to="/contact" className="mobile-nav__list__item" onClick={toggleNav}>
                         Contact
                         </Link>
                 </div>

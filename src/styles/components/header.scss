@@ -238,10 +238,13 @@
 
     &.closed {
         display: flex;
-        animation: closed 0.3s ease-out forwards;
+        animation: closed 1.3s ease-out forwards;
 
         @keyframes closed {
             0% {
+                opacity: 1;
+            }
+            50% {
                 opacity: 1;
             }
             99% {
