@@ -18,8 +18,6 @@ const NotFound = () => {
             landingBig={<h1>Four <br /> Oh Four</h1>}
             classNameProp="services"
         >
-
-            <h1>Page not Found</h1>
         </Layout>
     )
 }

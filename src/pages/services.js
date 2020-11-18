@@ -100,7 +100,6 @@ const Services = () => {
                 </div>
 
             </Section>
-
         </Layout>
     )
 }

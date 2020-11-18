@@ -8,6 +8,12 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`${__dirname}/src/layouts/index.js`),
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Webdacity | Design & Development",

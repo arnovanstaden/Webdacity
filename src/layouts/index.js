@@ -1,13 +1,8 @@
 import React from "react";
 
-// Gatsby, Plugins etc
-import TransitionLink from "gatsby-plugin-transition-link";
-
 // Components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Head from "../components/Head";
-import Landing from "../components/Landing";
 
 // Styles & Fonts
 import "typeface-nunito";
@@ -20,11 +15,9 @@ import "../assets/fonts/icons/icons.css";
 const Layout = (props) => {
     return (
         <>
-            <Head pageMeta={props.pageMeta} />
-            <Landing {...props} />
-            <main className={props.classNameProp}>
-                {props.children}
-            </main>
+            <Header />
+            {props.children}
+            <Footer />
         </>
     )
 

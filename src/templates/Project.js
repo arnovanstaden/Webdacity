@@ -61,10 +61,6 @@ const PageTemplate = ({ pageContext, data }) => {
         for (let i = 1; i <= (edges.length - 1); i++) {
             projectImages.push(<Img fluid={getImage(`${i}`, "projectImages")} key={i} style={{ width: "100%", marginBottom: "2rem" }} />)
         }
-
-
-
-
         return projectImages
     }
 
