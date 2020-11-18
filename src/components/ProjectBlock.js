@@ -12,7 +12,7 @@ const ProjectBlock = (props) => {
     if (project.type === "Design") {
         link = "/portfolio/design/" + project.name.replace(/ /g, "");
     } else {
-        link = "/portfolio/" + project.name.replace(/ /g, "");
+        link = "/portfolio/development/" + project.name.replace(/ /g, "");
     }
 
     return (

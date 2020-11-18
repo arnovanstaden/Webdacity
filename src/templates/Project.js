@@ -14,7 +14,6 @@ import LogoMark from "../assets/images/icons/content-block.svg";
 const PageTemplate = ({ pageContext, data }) => {
 
     const project = pageContext.project;
-    console.log(pageContext.imgPath)
 
     const getImage = (name, alias) => {
         let edges = data[alias].edges;
@@ -44,7 +43,7 @@ const PageTemplate = ({ pageContext, data }) => {
     }
 
     const DevelopmentLink = () => {
-        const link = "/portfolio/" + project.name.replace(/ /g, "");
+        const link = "/portfolio/development/" + project.name.replace(/ /g, "");
         return (
             <button className="button">
                 <Link to={link}>View Development Work</Link>
@@ -55,7 +54,6 @@ const PageTemplate = ({ pageContext, data }) => {
     // Project Images
     const ProjectImages = () => {
         let edges = data.projectImages.edges;
-        console.log(edges)
         let projectImages = [];
 
         projectImages.push(<Img fluid={getImage(`landing`, "projectImages")} key="landing" style={{ width: "100%", marginBottom: "2rem" }} />)
@@ -147,7 +145,7 @@ query projectImages($imgPath: String) {
                 srcSet
                 srcWebp
                 ...GatsbyImageSharpFluid
-            ...GatsbyImageSharpFluid_withWebp
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

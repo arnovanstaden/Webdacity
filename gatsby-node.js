@@ -12,7 +12,7 @@ exports.createPages = ({ actions }) => {
         const projectType = project.type.toLowerCase();
         if (project.visible) {
             createPage({
-                path: `/portfolio/${projectName}`,
+                path: `/portfolio/development/${projectName}`,
                 component: PageTemplate,
                 context: {
                     project,

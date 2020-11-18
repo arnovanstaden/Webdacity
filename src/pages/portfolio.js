@@ -1,7 +1,8 @@
 import React from "react";
-import Layout from "../components/Layout";
+import { graphql } from "gatsby";
 
 // Components
+import Layout from "../components/Layout";
 import Section from "../components/Section";
 import ProjectBlock from "../components/ProjectBlock";
 import ServiceTicker from "../components/ServiceTicker";
