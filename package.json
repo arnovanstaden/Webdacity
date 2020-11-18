@@ -36,6 +36,7 @@
     "react-helmet": "^6.1.0",
     "react-slick": "^0.27.11",
     "react-ticker": "^1.2.2",
+    "react-transition-group": "^4.4.1",
     "slick-carousel": "^1.8.1",
     "typeface-nunito": "^1.1.13",
     "typeface-nunito-sans": "^1.1.13",

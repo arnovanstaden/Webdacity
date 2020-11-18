@@ -3,6 +3,8 @@ import React from "react";
 // Components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Transition from '../components/Transition'
+
 
 // Styles & Fonts
 import "typeface-nunito";
@@ -12,11 +14,13 @@ import "../assets/fonts/icons/icons.css";
 
 // Icons
 
-const Layout = (props) => {
+const Layout = ({ children, location }) => {
     return (
         <>
             <Header />
-            {props.children}
+            <Transition location={location}>
+                {children}
+            </Transition>
             <Footer />
         </>
     )

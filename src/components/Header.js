@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "gatsby";
 import "../styles/components/header.scss"
 import NavbarLogo from "../assets/images/logos/webdacity/logo-full.svg";
@@ -41,7 +41,11 @@ const Header = () => {
         nav.classList.remove("open");
     }
 
-
+    useEffect(() => {
+        setTimeout(() => {
+            toggleNav()
+        }, 500);
+    });
 
 
     return (
@@ -77,16 +81,16 @@ const Header = () => {
             </nav>
             <nav className="mobile-nav">
                 <div className="mobile-nav__list">
-                    <Link to="/about" className="mobile-nav__list__item" onClick={toggleNav}>
+                    <Link to="/about" className="mobile-nav__list__item">
                         About
                         </Link>
-                    <Link to="/services" className="mobile-nav__list__item" onClick={toggleNav}>
+                    <Link to="/services" className="mobile-nav__list__item">
                         Services
                         </Link>
-                    <Link to="/portfolio" className="mobile-nav__list__item" onClick={toggleNav}>
+                    <Link to="/portfolio" className="mobile-nav__list__item">
                         Portfolio
                         </Link>
-                    <Link to="/contact" className="mobile-nav__list__item" onClick={toggleNav}>
+                    <Link to="/contact" className="mobile-nav__list__item">
                         Contact
                         </Link>
                 </div>

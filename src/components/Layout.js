@@ -4,8 +4,6 @@ import React from "react";
 import TransitionLink from "gatsby-plugin-transition-link";
 
 // Components
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Head from "../components/Head";
 import Landing from "../components/Landing";
 
