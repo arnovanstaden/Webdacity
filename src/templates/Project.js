@@ -67,7 +67,7 @@ const PageTemplate = ({ pageContext, data }) => {
     return (
         <Layout
             pageMeta={{
-                title: "Webdacity Studio | Design & Development",
+                title: `${project.name} | Design & Development`,
                 description: "Webdacity is a Design & Development Studio based in Cape Town.",
                 canonical: "/"
             }}
