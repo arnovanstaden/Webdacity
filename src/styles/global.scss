@@ -1,12 +1,19 @@
 // Variables
 
 $blue: #0061f0;
+// $blue: #0060f046;
 $black: #151618;
 $grey: #1b1d1f;
 $lightgrey: #99a1a6;
 $white: #ffffff;
-$headingfont: Nunito, Tahoma, Geneva, sans-serif;
-$mainfont: "Nunito Sans", Tahoma, Geneva, sans-serif;
+$headingfont: Nunito,
+Tahoma,
+Geneva,
+sans-serif;
+$mainfont: "Nunito Sans",
+Tahoma,
+Geneva,
+sans-serif;
 
 html,
 body {
@@ -53,11 +60,13 @@ body {
         -moz-border-radius: 1rem;
         -ms-border-radius: 1rem;
         -o-border-radius: 1rem;
+        transition: 0.4s ease-in-out;
+
+        &:hover {
+            background: $white;
+        }
     }
 
-    &-thumb:hover {
-        background: $white;
-    }
 }
 
 // Button

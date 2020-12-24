@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Transition from '../components/Transition'
+import Vanta from "../components/Vanta"
 
 
 // Styles & Fonts
@@ -19,6 +20,7 @@ const Layout = ({ children, location }) => {
         <>
             <Header />
             <Transition location={location}>
+                <Vanta />
                 {children}
             </Transition>
             <Footer />

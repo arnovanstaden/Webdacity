@@ -1,7 +1,10 @@
 import React from "react";
-import "../styles/components/landing.scss";
 import { Link } from "gatsby";
 import classNames from "classnames";
+
+// Styles
+import "../styles/components/landing.scss";
+
 
 const Landing = (props) => {
 

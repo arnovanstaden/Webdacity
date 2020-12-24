@@ -64,12 +64,14 @@ const PageTemplate = ({ pageContext, data }) => {
         return projectImages
     }
 
+    let urlName = project.name.replace(/ /g, "");
+
     return (
         <Layout
             pageMeta={{
-                title: `${project.name} | Design & Development`,
-                description: "Webdacity is a Design & Development Studio based in Cape Town.",
-                canonical: "/"
+                title: `${project.name} | ${project.type}`,
+                description: `${project.name} is a ${project.type} project by Webdacity completed in ${project.date}.`,
+                canonical: `/portfolio/${project.type}/${urlName}`
             }}
             project={project}
             classNameProp="project"
