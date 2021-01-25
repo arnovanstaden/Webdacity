@@ -6,7 +6,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-remove-trailing-slashes`,
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      exclude: [
+        `/404`,
+        `/terms`,
+      ],
+      createLinkInHead: true,
+    },
     {
       resolve: `gatsby-plugin-layout`,
       options: {

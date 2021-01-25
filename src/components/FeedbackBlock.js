@@ -14,7 +14,7 @@ const FeedbackBlock = ({ feedback }) => {
                 base
                 name
                 childImageSharp {
-                    fluid( maxWidth: 100, quality: 100, pngQuality: 100) {
+                    fluid( maxWidth: 200, quality: 100, pngQuality: 100) {
                     aspectRatio
                     base64
                     sizes

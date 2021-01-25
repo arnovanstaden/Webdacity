@@ -26,7 +26,7 @@ class Vanta extends React.Component {
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 0.4,
-            color: 0x0061f0,
+            color: 0x99a1a6,
             backgroundColor: 0x1b1d1f,
             maxDistance: 18.00,
             points: 6.00,

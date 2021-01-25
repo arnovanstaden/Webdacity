@@ -7,7 +7,7 @@ exports.createPages = ({ actions }) => {
     const PageTemplate = path.resolve("./src/templates/Project.js")
 
     developmentProjects.forEach(project => {
-        const projectName = project.name.replace(/ /g, "");
+        const projectName = project.name.replace(/ /g, "").toLowerCase();
         const folderName = project.name.replace(/ /g, "-");
         const projectType = project.type.toLowerCase();
         if (project.visible) {
@@ -23,7 +23,7 @@ exports.createPages = ({ actions }) => {
     });
 
     designProjects.forEach(project => {
-        const projectName = project.name.replace(/ /g, "");
+        const projectName = project.name.replace(/ /g, "").toLowerCase();
         const folderName = project.name.replace(/ /g, "-");
         const projectType = project.type.toLowerCase();
         if (project.visible) {

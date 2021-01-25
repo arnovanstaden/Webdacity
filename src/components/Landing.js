@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import classNames from "classnames";
 
 // Components
-import Vanta from "../components/Vanta"
 
 // Styles
 import "../styles/components/landing.scss";
@@ -42,7 +41,6 @@ const Landing = (props) => {
     const ProjectLanding = (props) => {
         return (
             <>
-                <Vanta />
                 <div className="landing__inner landing__inner--project">
                     <h1>{props.project.type}</h1>
                     <h3>{props.project.name}</h3>

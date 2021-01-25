@@ -96,6 +96,17 @@
                             margin-bottom: 0.5rem;
                         }
                     }
+
+                    &.row--repo {
+                        a {
+                            color: $lightgrey;
+                            transition: 0.3s ease-out;
+                        }
+
+                        a:hover {
+                            color: $blue;
+                        }
+                    }
                 }
             }
 

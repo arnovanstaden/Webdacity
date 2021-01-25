@@ -10,9 +10,9 @@ const ProjectBlock = (props) => {
     const project = props.project;
     let link = "";
     if (project.type === "Design") {
-        link = "/portfolio/design/" + project.name.replace(/ /g, "");
+        link = "/portfolio/design/" + project.name.replace(/ /g, "").toLowerCase();
     } else {
-        link = "/portfolio/development/" + project.name.replace(/ /g, "");
+        link = "/portfolio/development/" + project.name.replace(/ /g, "").toLowerCase();
     }
 
     return (

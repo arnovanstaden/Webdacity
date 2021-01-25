@@ -33,7 +33,7 @@ const Home = ({ data }) => {
         <Layout
             pageMeta={{
                 title: "Webdacity Studio | Design & Development",
-                description: "Webdacity is a Design & Development Studio based in Cape Town",
+                description: "Webdacity is a Design & Development Studio based in Cape Town. We design & develop amazing projects to help you grow your business.",
                 canonical: "/"
             }}
             landingTitle={
@@ -74,11 +74,11 @@ const Home = ({ data }) => {
             >
                 <div className="section-clients__grid">
                     {data.allFile.edges.map((image) =>
-                        (
-                            <div className="client__logo" key={uuidv4()}>
-                                <Img fluid={image.node.childImageSharp.fluid} />
-                            </div>
-                        ))}
+                    (
+                        <div className="client__logo" key={uuidv4()}>
+                            <Img fluid={image.node.childImageSharp.fluid} />
+                        </div>
+                    ))}
                 </div>
 
             </Section>

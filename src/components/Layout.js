@@ -7,12 +7,6 @@ import TransitionLink from "gatsby-plugin-transition-link";
 import Head from "../components/Head";
 import Landing from "../components/Landing";
 
-// Styles & Fonts
-import "typeface-nunito";
-import "typeface-nunito-sans";
-import "../styles/global.scss";
-import "../assets/fonts/icons/icons.css";
-
 // Icons
 
 const Layout = (props) => {

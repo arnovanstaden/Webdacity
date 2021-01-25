@@ -9,7 +9,8 @@
     "description": "Oosthuizens Attorneys requested a minimalist site where potential clients can reach them,learn more about their history and the legal services they offer, and also get in touch with them regarding legal advice.",
     "design": false,
     "home": true,
-    "visible": true
+    "visible": true,
+    "repo": "https://github.com/Webdacity/OosthuizensAttorneys"
 }, {
     "name": "HundredFold",
     "type": "Development",
@@ -21,7 +22,8 @@
     "description": "Hundredfold is an Africa focused strategy company that prides itself in international networks and global collaborations. \n\nThey were in need of a sleek & modern brand identity and accompanying website to show off their capabilities & the industries they operate in.",
     "design": true,
     "home": true,
-    "visible": true
+    "visible": true,
+    "repo": "https://github.com/Webdacity/HundredFold"
 }, {
     "name": "Gemma Institute",
     "type": "Development",
@@ -32,7 +34,8 @@
     "tools": "HTML,CSS,Javascript,JQuery,Bootstrap,ExpressJS,NodeJS",
     "description": "The GEMMA Institute is a Psychotherapy Clinic based in Frankfurt, Germany. They assist individuals, couples and families experiencing personal and social challenges.\n\nWe met their needs by creating a clean & modern website where they can effectively communicate their therapeutic concept and how their therapy works. Custom functionality includes the ability for patients to apply for & complete the relevant consent documentation online, as well as provide feedback for their sessions at the clinic. \n\n Their website is available in both English & German.",
     "home": true,
-    "visible": true
+    "visible": true,
+    "repo": "https://github.com/Webdacity/GEMMA-English"
 }, {
     "name": "PR Engineering",
     "type": "Development",
@@ -53,6 +56,7 @@
     "industry": "Online Shopping",
     "tools": "HTML,CSS,Javascript,JQuery,Bootstrap,ExpressJS,NodeJS,MongoDB",
     "description": "Varkhart started as a small e-commerce store but has since grown to a vast online retail endeavour with a substantial online presence. Originally built upon our custom e-commerce platform, it has since grown to encompass fully-fledged reseller & affiliate programs. \n\nWe were involved for every step of the project, from branding to product development. If you'd like to check it out for yourself, head over to",
+    "repo": "https://github.com/Webdacity/Varkhart",
     "home": true,
     "visible": true
 }, {
@@ -64,7 +68,8 @@
     "industry": "Finance | Business",
     "tools": "HTML,CSS,Javascript,JQuery",
     "description": "AfricaneurIQ (AIQ) is a professional service company that delivers rapid, equitable and sustainable economic transformation through Enterprise and Supplier Development. \n\nThey had a well-crafted brand identity and required a website revamp that truly captures their existing brand image and defines what they do in a succinct and easy to digest manner. ",
-    "visible": true
+    "visible": true,
+    "repo": "https://github.com/Webdacity/AfricaneurIQ"
 }, {
     "name": "SmartFunder",
     "type": "Development",
@@ -74,7 +79,8 @@
     "industry": "Education | Finance",
     "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
     "description": "SmartFunder is a mechanism for Employers in South Africa to assist their employees to pay school fees in a smarter, more tax-efficient way. They wanted a website that reflects their friendly, user-centric brand and provides information regarding their services in a simple, easy-to-understand way. Their main goal was to explain how their business model works and answer any lingering questions.",
-    "visible": true
+    "visible": true,
+    "repo": "https://github.com/Webdacity/SmartFunder"
 }, {
     "name": "Reset Capital",
     "type": "Development",
@@ -85,7 +91,8 @@
     "tools": "HTML,CSS,Javascript,JQuery",
     "description": "Reset Capital (RC) is an investment firm with a unique focus on investment opportunities in BEE companies. \n\nTheir site features content regarding their funding principles and investment focus, presented in a clean and minimalistic fashion.",
     "design": true,
-    "visible": true
+    "visible": true,
+    "repo": "https://github.com/Webdacity/ResetCapital"
 }, {
     "name": "NC Chemicals",
     "type": "Development",
@@ -96,7 +103,8 @@
     "tools": "HTML,CSS,Javascript,JQuery,Bootstrap",
     "description": "NC Chemicals is a manufacturer and distributor of cleaning chemicals for the car wash and industrial industry. \n\nThey originally needed a simple online presence featuring who they are and what they do, as well as accompanying print documents to be designed showcasing their product catalogue. \n\nWe recommended integrating our e-commerce platform into their website to function as a one-stop-shop to showcase & sell their products online, from anywhere.",
     "design": true,
-    "visible": true
+    "visible": true,
+    "repo": "https://github.com/Webdacity/NC-Chemicals/settings"
 }, {
     "name": "Craft Consulting",
     "type": "Development",
@@ -106,7 +114,8 @@
     "industry": "Engineering",
     "tools": "HTML,CSS,Javascript,JQuery",
     "description": "Craft Consulting is a Cape Town based Civil & Structural Engineering firm. \n\nThey needed a minimalist & clean website to showcase their services & previous projects. They struggled with establishing a good design with the DIY website builder Wix and required professional help with their website's redesign. \n\nThey requested to keep the dark & moody theme, but with a complete design overhaul & updated content to match their current brand image. ",
-    "visible": true
+    "visible": true,
+    "repo": "https://github.com/Webdacity/CraftConsulting"
 }, {
     "name": "The Mish Dish",
     "type": "Development",
@@ -116,7 +125,8 @@
     "industry": "Blog",
     "tools": "HTML,CSS,Javascript,JQuery,Bootstrap,ExpressJS,NodeJS,MongoDB",
     "description": "The Mish Dish as a unique & personalised food-blog with a twist. \n\nOriginally starting off with a Weebly site, Mish realised the inherent shortcomings of a WYSIWYG website builder and requested we help her with setting up a food blog. \n\nShe required the ability to administer the recipes themselves and needed the blog to have a unique UX & UI that enticed readers to return.",
-    "visible": true
+    "visible": true,
+    "repo": "https://github.com/Webdacity/TheMishDish"
 }, {
     "name": "CCPT",
     "type": "Development",
@@ -127,7 +137,8 @@
     "tools": "HTML,CSS,Javascript,ReactJS,Gatsby",
     "description": "Cape Control Panel Technology (CCPT) is an engineering firm that builds specialised power and control panels. \n\nThey needed a concise website showcasing their capabilities, their team of experts and projects they 've undertaken in the past.",
     "design": true,
-    "visible": false
+    "visible": false,
+    "repo": "https://github.com/Webdacity/CCPT"
 }, {
     "name": "Isaacson Ladders",
     "type": "Development",
@@ -137,5 +148,6 @@
     "industry": "Manufacturing",
     "tools": "HTML,CSS,Javascript,JQuery",
     "description": "Isaacson Ladders is a manufacturer based in Johannesburg that produces & wholesales ladders, castors, trolleys and wheels. \n\nThey required a website revamp that works in symbioses with their current brand and functions as a platform to showcase a catalogue of the products they manufacture, as well as provide valuable information relating to the company. ",
-    "visible": false
+    "visible": false,
+    "repo": "https://github.com/Webdacity/IsaacsonLadders"
 }]

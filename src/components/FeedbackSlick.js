@@ -29,7 +29,7 @@ class Slick extends Component {
             speed: 500,
             responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 991,
                     settings: {
                         slidesToShow: 1,
                         infinite: true,
