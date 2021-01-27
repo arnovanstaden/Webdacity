@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Fade from "react-reveal/Fade";
 
 // Components
 import Layout from "../components/Layout";
@@ -56,13 +55,11 @@ const Portfolio = ({ data }) => {
                 headingSmall="Our work speaks for itself. Here are some of our featured web development projects."
                 classNameProp="section-projects"
             >
-                <Fade bottom>
-                    <div className="section-projects__grid" id="development">
-                        {devProjects.map(project => (
-                            <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
-                        ))}
-                    </div>
-                </Fade>
+                <div className="section-projects__grid" id="development">
+                    {devProjects.map(project => (
+                        <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
+                    ))}
+                </div>
             </Section>
 
             <Section
@@ -81,14 +78,11 @@ const Portfolio = ({ data }) => {
                 headingSmall="Our work speaks for itself. Here are some of our featured web design projects."
                 classNameProp="section-projects"
             >
-                <Fade bottom>
-
-                    <div className="section-projects__grid" id="design">
-                        {desProjects.map(project => (
-                            <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
-                        ))}
-                    </div>
-                </Fade>
+                <div className="section-projects__grid" id="design">
+                    {desProjects.map(project => (
+                        <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
+                    ))}
+                </div>
             </Section>
 
         </Layout>

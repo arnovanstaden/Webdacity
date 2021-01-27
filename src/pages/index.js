@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Img from "gatsby-image";
-import Fade from "react-reveal/Fade";
 
 // Components
 import Layout from "../components/Layout";
@@ -54,13 +53,11 @@ const Home = ({ data }) => {
                 headingSmall="Our work speaks for itself. Here are some of our featured projects."
                 classNameProp="section-projects"
             >
-                <Fade bottom>
-                    <div className="section-projects__grid">
-                        {ProjectData.map(project => (
-                            project.home ? <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project.name)} /> : null
-                        ))}
-                    </div>
-                </Fade>
+                <div className="section-projects__grid">
+                    {ProjectData.map(project => (
+                        project.home ? <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project.name)} /> : null
+                    ))}
+                </div>
                 <button className="button button--centered">
                     <Link to="/portfolio">
                         View All Projects

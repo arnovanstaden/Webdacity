@@ -1,6 +1,8 @@
 import React from 'react';
 import Img from "gatsby-image";
 import { Link } from "gatsby";
+import Fade from "react-reveal/Fade";
+
 
 
 // Styles, Fonts, Images
@@ -16,17 +18,19 @@ const ProjectBlock = (props) => {
     }
 
     return (
-        <Link className="project-block" to={link}>
-            <div>
-                <div className="project-block__image">
-                    <Img fluid={props.thumbnail} style={{ width: "100%" }} />
-                </div>
-                <div className="project-block__heading">
-                    <h3>{project.name}</h3>
-                    <p>{project.services}</p>
-                </div>
+        <Fade>
+            <div className="project-block">
+                <Link to={link}>
+                    <div className="project-block__image">
+                        <Img fluid={props.thumbnail} style={{ width: "100%" }} />
+                    </div>
+                    <div className="project-block__heading">
+                        <h3>{project.name}</h3>
+                        <p>{project.services}</p>
+                    </div>
+                </Link>
             </div>
-        </Link>
+        </Fade>
     )
 }
 
