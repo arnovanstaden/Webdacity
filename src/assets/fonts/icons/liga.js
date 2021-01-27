@@ -25,6 +25,10 @@
     var icons;
     if (!supportsProperty('fontFeatureSettings')) {
         icons = {
+            'npm': '&#xeab1;',
+            'brand41': '&#xeab1;',
+            'stackoverflow': '&#xead0;',
+            'brand71': '&#xead0;',
             'git': '&#xeae7;',
             'brand80': '&#xeae7;',
           '0': 0

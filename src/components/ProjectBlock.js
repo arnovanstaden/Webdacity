@@ -1,6 +1,6 @@
 import React from 'react';
 import Img from "gatsby-image";
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 
 
 // Styles, Fonts, Images
@@ -16,7 +16,6 @@ const ProjectBlock = (props) => {
     }
 
     return (
-        // <div className="project-block" onClick={goToProject}>
         <Link className="project-block" to={link}>
             <div>
                 <div className="project-block__image">

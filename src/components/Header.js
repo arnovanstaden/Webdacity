@@ -46,7 +46,7 @@ const Header = () => {
         <header>
             <nav className="navbar">
                 <Link to="/" className="navbar__logo" onClick={closeNav}>
-                    <img src={NavbarLogo} alt="Webdacity Navbar Logo" />
+                    <img src={NavbarLogo} />
                 </Link>
                 <div className="navbar__list">
                     <Link to="/about" className="navbar__list__item" activeClassName="navbar__list__item--active">

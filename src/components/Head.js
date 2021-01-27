@@ -10,7 +10,7 @@ const Head = ({ pageMeta }) => {
 
             <title>{pageMeta.title}</title>
             <meta name="description" content={pageMeta.description} />
-            <link rel="canonical" href={`https://webdacity.dev${pageMeta.canonical.toLowerCase()}`} />
+            {pageMeta.canonical ? <link rel="canonical" href={`https://webdacity.dev${pageMeta.canonical.toLowerCase()}`} /> : null}
             <meta name="robots" content={pageMeta.robots ? pageMeta.robots : "index, follow"} />
 
             <meta name="author" content="Webdacity" />
@@ -22,7 +22,7 @@ const Head = ({ pageMeta }) => {
             <meta property="og:title" content={pageMeta.title} />
             <meta property="og:description" content={pageMeta.description} />
             <meta property="og:type" content="Website" />
-            <meta property="og:url" content={`https://webdacity.dev${pageMeta.canonical.toLowerCase()}`} />
+            {pageMeta.canonical ? <meta property="og:url" content={`https://webdacity.dev${pageMeta.canonical.toLowerCase()}`} /> : null}
             <meta property="og:image" content="https://webdacity.dev/social.png" />
             <meta property="og:image:type" content="image/png" />
             <meta property="og:image:width" content="500" />

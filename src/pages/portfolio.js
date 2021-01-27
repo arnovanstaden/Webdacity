@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Fade from "react-reveal/Fade";
 
 // Components
 import Layout from "../components/Layout";
@@ -54,13 +55,14 @@ const Portfolio = ({ data }) => {
                 headingBig="Development Projects"
                 headingSmall="Our work speaks for itself. Here are some of our featured web development projects."
                 classNameProp="section-projects"
-                idProp="development"
             >
-                <div className="section-projects__grid">
-                    {devProjects.map(project => (
-                        <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
-                    ))}
-                </div>
+                <Fade bottom>
+                    <div className="section-projects__grid" id="development">
+                        {devProjects.map(project => (
+                            <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
+                        ))}
+                    </div>
+                </Fade>
             </Section>
 
             <Section
@@ -78,13 +80,15 @@ const Portfolio = ({ data }) => {
                 headingBig="Design Projects"
                 headingSmall="Our work speaks for itself. Here are some of our featured web design projects."
                 classNameProp="section-projects"
-                idProp="design"
             >
-                <div className="section-projects__grid">
-                    {desProjects.map(project => (
-                        <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
-                    ))}
-                </div>
+                <Fade bottom>
+
+                    <div className="section-projects__grid" id="design">
+                        {desProjects.map(project => (
+                            <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project)} />
+                        ))}
+                    </div>
+                </Fade>
             </Section>
 
         </Layout>

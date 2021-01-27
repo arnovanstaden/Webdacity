@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Img from "gatsby-image";
-import { v4 as uuidv4 } from 'uuid';
+import Fade from "react-reveal/Fade";
 
 // Components
 import Layout from "../components/Layout";
@@ -33,7 +33,7 @@ const Home = ({ data }) => {
         <Layout
             pageMeta={{
                 title: "Webdacity Studio | Design & Development",
-                description: "Webdacity is a Design & Development Studio based in Cape Town. We design & develop amazing projects to help you grow your business.",
+                description: "Webdacity is a Design & Development Studio based in Cape Town. We design & develop amazing websites & apps to help you grow your business.",
                 canonical: "/"
             }}
             landingTitle={
@@ -54,11 +54,13 @@ const Home = ({ data }) => {
                 headingSmall="Our work speaks for itself. Here are some of our featured projects."
                 classNameProp="section-projects"
             >
-                <div className="section-projects__grid">
-                    {ProjectData.map(project => (
-                        project.home ? <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project.name)} /> : null
-                    ))}
-                </div>
+                <Fade bottom>
+                    <div className="section-projects__grid">
+                        {ProjectData.map(project => (
+                            project.home ? <ProjectBlock key={project.name} project={project} thumbnail={getThumbnail(project.name)} /> : null
+                        ))}
+                    </div>
+                </Fade>
                 <button className="button button--centered">
                     <Link to="/portfolio">
                         View All Projects
@@ -73,9 +75,9 @@ const Home = ({ data }) => {
                 classNameProp="section-clients"
             >
                 <div className="section-clients__grid">
-                    {data.allFile.edges.map((image) =>
+                    {data.allFile.edges.map((image, index) =>
                     (
-                        <div className="client__logo" key={uuidv4()}>
+                        <div className="client__logo" key={index}>
                             <Img fluid={image.node.childImageSharp.fluid} />
                         </div>
                     ))}

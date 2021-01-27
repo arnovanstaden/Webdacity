@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby";
+
 
 // Styles, Fonts, Images
 import "../styles/components/feedback-block.scss";

@@ -51,7 +51,7 @@ const Services = () => {
                 <div className="view-work">
                     <h4>Like what you see but not sold just yet?</h4>
                     <button className="button">
-                        <Link to="/portfolio">
+                        <Link to="/portfolio#development">
                             View our Development Work
                             </Link>
                     </button>
@@ -93,7 +93,7 @@ const Services = () => {
                 <div className="view-work">
                     <h4>Like what you see but not sold just yet?</h4>
                     <button className="button">
-                        <Link to="/portfolio">
+                        <Link to="/portfolio#design">
                             View our Design Work
                             </Link>
                     </button>
