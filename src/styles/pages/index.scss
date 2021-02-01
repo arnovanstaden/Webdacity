@@ -8,6 +8,7 @@
             flex-wrap: wrap;
             padding-bottom: 4rem;
             row-gap: 1rem;
+            align-items: flex-start;
 
             .project-block {
                 width: 40%;
@@ -34,13 +35,15 @@
                 margin-bottom: 3rem;
             }
 
-            .project-block:last-child {
-                justify-self: flex-start;
+            ::after {
+                content: "";
+                justify-content: flex-start;
             }
 
             @media (max-width: 768px) {
                 row-gap: 3rem;
             }
+
         }
     }
 

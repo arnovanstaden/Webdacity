@@ -6,6 +6,7 @@
     background-color: $grey;
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
+    @include boxShadow;
 
     &:hover {
         transform: scale(1.01);

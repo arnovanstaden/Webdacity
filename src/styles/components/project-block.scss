@@ -4,6 +4,8 @@
     border-radius: 0.5rem;
     background-color: $grey;
     transition: 0.3s ease-out;
+    @include boxShadow;
+
 
     a {
         text-decoration: none;

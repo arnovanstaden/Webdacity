@@ -2,12 +2,17 @@
 
 .slick-track {
     display: flex !important;
-    align-items: center;
+    height: 100%;
 }
 
-.slick-slide > div {
-    margin: 0 0.5rem;
+.slick-slide {
+    height: 100%;
+
+    >div {
+        margin: 0 0.5rem;
+    }
 }
+
 .slick-list {
     margin: 0 -0.5rem;
 }
