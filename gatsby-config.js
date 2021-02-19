@@ -7,14 +7,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-remove-trailing-slashes`,
-    `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-advanced-sitemap`,
-      exclude: [
-        `/404`,
-        `/terms`,
-      ],
-      createLinkInHead: true,
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        navigateFallback: null,
+        navigateFallbackWhitelist: [],
+      }
     },
     {
       resolve: `gatsby-plugin-layout`,

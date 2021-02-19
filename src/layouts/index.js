@@ -10,7 +10,7 @@ import Transition from '../components/Transition'
 import "typeface-nunito";
 import "typeface-nunito-sans";
 import "../styles/global.scss";
-import "../assets/fonts/icons/icons.css";
+import "../assets/fonts/icons/style.css";
 
 // Icons
 

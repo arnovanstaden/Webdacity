@@ -71,7 +71,8 @@ const PageTemplate = ({ pageContext, data }) => {
             pageMeta={{
                 title: `${project.name} | ${project.type}`,
                 description: `${project.name} is a ${project.type} project by Webdacity completed in ${project.date}.`,
-                canonical: `/portfolio/${project.type}/${urlName}`
+                canonical: `/portfolio/${project.type}/${urlName}`,
+                robots: "noindex, nofollow"
             }}
             project={project}
             classNameProp="project"
