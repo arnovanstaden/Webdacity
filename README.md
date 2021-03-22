@@ -4,20 +4,20 @@ My studio's own dark & clean website showcasing services and projects.
 ## Link
 You can visit the site [here](https://webdacity.dev).
 
-### Additional Information
+## Additional Information
 
-#### Type
+### Type
 Website
 
-#### Tech Stack
+### Tech Stack
 * React
 * GatsbyJS
 * SASS
 
-#### Industry
+### Industry
 Web Development
 
-#### Date
+### Date
 October 2020
 
 
