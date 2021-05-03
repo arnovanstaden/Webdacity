@@ -195,8 +195,7 @@
 }, {
     "name": "PR Engineering",
     "type": "Development",
-    "category": "Websites",
-    "brief": "A website for an engineering film, showcasing their services & past projects.",
+    "services": "Web Design & Development",
     "link": "https://www.engpr.com",
     "date": "June 2019",
     "industry": "Engineering",
@@ -207,8 +206,7 @@
 }, {
     "name": "U & Me Wedding",
     "type": "Development",
-    "category": "Websites",
-    "brief": "One-pager wedding site displaying important information about the special day.",
+    "services": "Web Design & Development",
     "link": "https://uandmewedding.co.za/",
     "date": "August 2019",
     "industry": "Wedding",

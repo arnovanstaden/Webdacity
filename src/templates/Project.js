@@ -14,7 +14,6 @@ import LogoMark from "../assets/images/icons/content-block.svg";
 const PageTemplate = ({ pageContext, data }) => {
 
     const project = pageContext.project;
-    console.log(typeof project.tools)
 
     const getImage = (name, alias) => {
         let edges = data[alias].edges;
