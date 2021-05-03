@@ -14,6 +14,7 @@ import LogoMark from "../assets/images/icons/content-block.svg";
 const PageTemplate = ({ pageContext, data }) => {
 
     const project = pageContext.project;
+    console.log(typeof project.tools)
 
     const getImage = (name, alias) => {
         let edges = data[alias].edges;
@@ -34,7 +35,7 @@ const PageTemplate = ({ pageContext, data }) => {
     }
 
     const DesignLink = () => {
-        const link = "/portfolio/design/" + project.name.replace(/ /g, "");
+        const link = "/portfolio/design/" + project.name.replace(/ /g, "").toLowerCase();
         return (
             <button className="button">
                 <Link to={link}>View Design Work</Link>
@@ -43,7 +44,7 @@ const PageTemplate = ({ pageContext, data }) => {
     }
 
     const DevelopmentLink = () => {
-        const link = "/portfolio/development/" + project.name.replace(/ /g, "");
+        const link = "/portfolio/development/" + project.name.replace(/ /g, "").toLowerCase();
         return (
             <button className="button">
                 <Link to={link}>View Development Work</Link>
@@ -105,17 +106,13 @@ const PageTemplate = ({ pageContext, data }) => {
                             <h5>Industry</h5>
                             <p>{project.industry}</p>
                         </div>
-                        {project.repo ?
-                            <div className="grid__details__row row--repo">
-                                <h5>Repository</h5>
-                                <a href={project.repo} target="blank">
-                                    <i className="icon-github"></i>
-                                </a>
-                            </div>
-                            : null}
                         <div className="grid__details__row row--tools">
                             {project.type === "Development" ? <h5>Tools</h5> : <h5>Design Elements</h5>}
-                            {project.type === "Development" ? <p>{project.tools.replace(/,/g, "  |  ")}</p> : <p>{project.elements.replace(/,/g, "  |  ")}</p>}
+                            {project.type === "Development" ?
+                                typeof project.tools === "object" ?
+                                    <p>{project.tools.join("  |  ")}</p>
+                                    : <p>{project.tools.replace(/,/g, "  |  ")}</p>
+                                : <p>{project.elements.replace(/,/g, "  |  ")}</p>}
                         </div>
                     </div>
                 </div>
