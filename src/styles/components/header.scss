@@ -2,7 +2,7 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
     position: absolute;
@@ -230,6 +230,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -244,12 +245,15 @@
             0% {
                 opacity: 1;
             }
+
             50% {
                 opacity: 1;
             }
+
             99% {
                 opacity: 0;
             }
+
             100% {
                 display: none;
             }

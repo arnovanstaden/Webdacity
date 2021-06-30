@@ -19,7 +19,9 @@ const Landing = (props) => {
         if (props.content) {
             return (
                 <button className="button landing__button">
-                    <Link to={props.content.to}>{props.content.text}</Link>
+                    <a href={props.content.to} target="blank">
+                        {props.content.text}
+                    </a>
                 </button>
             )
         }
@@ -32,6 +34,7 @@ const Landing = (props) => {
                 <div className="landing__inner">
                     {props.landingBig}
                     {props.landingTitle}
+                    <p>{props.landingText}</p>
                 </div >
                 <LandingButton content={props.landingButton} />
             </>

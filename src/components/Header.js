@@ -48,46 +48,6 @@ const Header = () => {
                 <Link to="/" className="navbar__logo" onClick={closeNav}>
                     <img src={NavbarLogo} />
                 </Link>
-                <div className="navbar__list">
-                    <Link to="/about" className="navbar__list__item" activeClassName="navbar__list__item--active">
-                        About
-                        </Link>
-                    <Link to="/services" className="navbar__list__item" activeClassName="navbar__list__item--active">
-                        Services
-                        </Link>
-                    <Link to="/portfolio" className="navbar__list__item"
-                        activeClassName="navbar__list__item--active">
-                        Portfolio
-                        </Link>
-                    <Link to="/contact" className="navbar__list__item"
-                        activeClassName="navbar__list__item--active">
-                        Contact
-                        </Link>
-                </div>
-                <div className="navbar__button" onClick={toggleNav} >
-                    <div className="navbar__button__icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </nav>
-            <nav className="mobile-nav">
-                <div className="mobile-nav__list">
-                    <Link to="/about" className="mobile-nav__list__item" onClick={toggleNav}>
-                        About
-                        </Link>
-                    <Link to="/services" className="mobile-nav__list__item" onClick={toggleNav}>
-                        Services
-                        </Link>
-                    <Link to="/portfolio" className="mobile-nav__list__item" onClick={toggleNav}>
-                        Portfolio
-                        </Link>
-                    <Link to="/contact" className="mobile-nav__list__item" onClick={toggleNav}>
-                        Contact
-                        </Link>
-                </div>
             </nav>
         </header>
     )

@@ -42,11 +42,17 @@
             padding: 0 10%;
             font-size: 2.75rem;
             position: relative;
+            margin: 0;
 
             span {
                 color: $blue;
                 font-weight: 400;
             }
+        }
+
+        p {
+            position: relative;
+            margin-bottom: 2rem;
         }
     }
 

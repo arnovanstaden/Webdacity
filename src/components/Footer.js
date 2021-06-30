@@ -9,57 +9,17 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer">
-                <Link to="/">
-                    <img src={FooterLogo} alt="Webdacity Footer Logo" />
-                </Link>
-                <div className="footer__menu">
-                    <Link to="/about" className="footer__menu__item">
-                        About
-                        </Link>
-                    <Link to="/services" className="footer__menu__item">
-                        Services
-                        </Link>
-                    <Link to="/portfolio" className="footer__menu__item">
-                        Portfolio
-                        </Link>
-                    <Link to="/contact" className="footer__menu__item">
-                        Contact
-                        </Link>
-                </div>
-                <div className="footer__divider"></div>
                 <div className="footer__contact">
-                    <p>Got an awesome project in mind? <Link to="/contact">Let's talk!</Link> </p>
+                    <p>Need supporting on a past project with Webdacity? Send us an email and we'll get back to you soon.</p>
                     <div className="footer__contact__details">
-                        <a href="mailto:hello@webdacity.dev">hello@webdacity.dev</a>
-                        <span>|</span>
-                        <a href="tel:0797405874">079 740 5874</a>
+                        <a href="mailto:support@webdacity.dev">support@webdacity.dev</a>
                     </div>
-                </div>
-                <div className="footer__social">
-                    <a href="https://www.instagram.com/?hl=en" target="blank">
-                        <i className="icon-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/webdacity" target="blank">
-                        <i className="icon-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/Webdacity" target="blank">
-                        <i className="icon-facebook"></i>
-                    </a>
-                    <a href="https://dribbble.com/Webdacity" target="blank">
-                        <i className="icon-dribbble"></i>
-                    </a>
-                    <a href="https://www.behance.net/Webdacity" target="blank">
-                        <i className="icon-behance"></i>
-                    </a>
-                    <a href="https://github.com/Webdacity" target="blank">
-                        <i className="icon-github"></i>
-                    </a>
                 </div>
             </div>
             <div className="footer__copy">
                 <p><Link to="/terms">Terms of Service</Link></p>
                 <span>|</span>
-                <p> © 2020 - Webdacity (PTY) LTD.</p>
+                <p> © 2021 - Webdacity (PTY) LTD.</p>
             </div>
         </footer>
     )
